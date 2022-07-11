@@ -1,0 +1,3 @@
+rootProject.name = 'Yelstream Topp XML Utility Project'
+
+include 'Topp-JAXB-Binding-Library'
