@@ -12,11 +12,25 @@ import javax.xml.validation.Schema;
  */
 @UtilityClass
 public class Marshallers {
+    /**
+     * Creates a marshaller.
+     * @param context JAXB context.
+     * @return Marshaller.
+     * @throws JAXBException Thrown in case of JAXB error.
+     */
     public static Marshaller createMarshaller(JAXBContext context) throws JAXBException {
         return createMarshaller(context, null);
     }
 
-    public static Marshaller createMarshaller(JAXBContext context, Schema schema) throws JAXBException {
+    /**
+     * Creates a marshaller.
+     * @param context JAXB context.
+     * @param schema Schema.
+     * @return Marshaller.
+     * @throws JAXBException Thrown in case of JAXB error.
+     */
+    public static Marshaller createMarshaller(JAXBContext context,
+                                              Schema schema) throws JAXBException {
         Marshaller marshaller=context.createMarshaller();
         marshaller.setProperty(Marshaller.JAXB_FORMATTED_OUTPUT,Boolean.TRUE);
         if (schema!=null) {

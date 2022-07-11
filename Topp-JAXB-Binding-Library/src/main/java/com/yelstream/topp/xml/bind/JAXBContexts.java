@@ -10,9 +10,13 @@ import javax.xml.bind.JAXBException;
  */
 @UtilityClass
 public class JAXBContexts {
-
-    public static JAXBContext createJAXBContext(
-            Class<?> declaredType) throws JAXBException {
+    /**
+     * Create a new JAXB context.
+     * @param declaredType Class to be recognized by JAXB context.
+     * @return JAXB context.
+     * @throws JAXBException Thrown in case of JAXB error.
+     */
+    public static JAXBContext createJAXBContext(Class<?> declaredType) throws JAXBException {
         return JAXBContext.newInstance(declaredType);
     }
 }
