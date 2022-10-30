@@ -22,6 +22,13 @@ xjc {
     strictCheck = true
 }
 
+/*
+xjcGenerate {
+    bindingFiles = files('binding1.xml')
+    targetPackage = 'com.example1'
+}
+*/
+
 java {
 //    withJavadocJar()
     withSourcesJar()

@@ -5,6 +5,9 @@ import javax.xml.bind.Marshaller;
 
 /**
  * Marshal operator.
+ * @author Morten Sabroe Mortensen
+ * @version 1.0
+ * @since 2022-04-20
  */
 @FunctionalInterface
 public interface MarshalOperator {

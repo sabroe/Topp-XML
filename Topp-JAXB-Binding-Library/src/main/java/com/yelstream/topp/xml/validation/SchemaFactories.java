@@ -7,6 +7,9 @@ import javax.xml.validation.SchemaFactory;
 
 /**
  * Utility addressiong instances of {@link SchemaFactory}.
+ * @author Morten Sabroe Mortensen
+ * @version 1.0
+ * @since 2022-04-20
  */
 @UtilityClass
 public class SchemaFactories {

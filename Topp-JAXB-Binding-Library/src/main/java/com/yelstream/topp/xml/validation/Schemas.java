@@ -12,6 +12,9 @@ import java.io.InputStream;
 
 /**
  * Utility addressing instances of {@link Schema}.
+ * @author Morten Sabroe Mortensen
+ * @version 1.0
+ * @since 2022-04-20
  */
 @UtilityClass
 public class Schemas {

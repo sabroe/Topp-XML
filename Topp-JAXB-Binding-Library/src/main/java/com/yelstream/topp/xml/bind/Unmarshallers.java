@@ -9,6 +9,9 @@ import javax.xml.validation.Schema;
 
 /**
  * Utility addressing instances of {@link Unmarshaller}.
+ * @author Morten Sabroe Mortensen
+ * @version 1.0
+ * @since 2022-04-20
  */
 @UtilityClass
 public class Unmarshallers {

@@ -1,0 +1,24 @@
+plugins {
+    id 'java-library-distribution'
+    id 'maven-publish'
+    id 'signing'
+}
+
+repositories {
+    mavenCentral()
+    maven { url 'https://oss.sonatype.org/content/repositories/snapshots/' }
+}
+
+dependencies {
+    compileOnly 'org.projectlombok:lombok:1.18.24'
+    annotationProcessor 'org.projectlombok:lombok:1.18.24'
+
+//    api 'javax.xml.bind:jaxb-api:2.4.0-b180830.0359'
+//    api 'javax.activation:activation:1.1.1'
+//    api 'org.glassfish.jaxb:jaxb-runtime:4.0.0'
+}
+
+java {
+    withJavadocJar()
+    withSourcesJar()
+}

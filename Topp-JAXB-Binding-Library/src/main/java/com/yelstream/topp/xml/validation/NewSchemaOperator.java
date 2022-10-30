@@ -7,6 +7,9 @@ import java.io.IOException;
 
 /**
  * Factory of schema instances.
+ * @author Morten Sabroe Mortensen
+ * @version 1.0
+ * @since 2022-04-20
  */
 @FunctionalInterface
 public interface NewSchemaOperator {
