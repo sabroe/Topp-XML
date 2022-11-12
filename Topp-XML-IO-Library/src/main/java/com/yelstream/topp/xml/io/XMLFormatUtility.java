@@ -1,10 +1,6 @@
 package com.yelstream.topp.xml.io;
 
 import lombok.experimental.UtilityClass;
-
-import java.io.*;
-import java.nio.charset.StandardCharsets;
-
 import org.w3c.dom.Document;
 import org.xml.sax.InputSource;
 import org.xml.sax.SAXException;
@@ -12,9 +8,21 @@ import org.xml.sax.SAXException;
 import javax.xml.parsers.DocumentBuilder;
 import javax.xml.parsers.DocumentBuilderFactory;
 import javax.xml.parsers.ParserConfigurationException;
-import javax.xml.transform.*;
+import javax.xml.transform.OutputKeys;
+import javax.xml.transform.Result;
+import javax.xml.transform.Source;
+import javax.xml.transform.Transformer;
+import javax.xml.transform.TransformerConfigurationException;
+import javax.xml.transform.TransformerException;
+import javax.xml.transform.TransformerFactory;
 import javax.xml.transform.dom.DOMSource;
 import javax.xml.transform.stream.StreamResult;
+import java.io.IOException;
+import java.io.Reader;
+import java.io.StringReader;
+import java.io.StringWriter;
+import java.io.Writer;
+import java.nio.charset.StandardCharsets;
 
 /**
  * Utility addressing the formatting of XML.
@@ -65,8 +73,8 @@ public class XMLFormatUtility {
     private static Transformer createTransformer() {
         try {
             TransformerFactory transformerFactory = TransformerFactory.newDefaultInstance();
-//            transformerFactory.setAttribute("indent-number", indent);  //https://www.tabnine.com/code/java/methods/javax.xml.transform.TransformerFactory/setAttribute
-//Transformer transformer = transformerFactory.newTransformer(new StreamSource(new StringReader(readPrettyPrintXslt())));
+            //transformerFactory.setAttribute("indent-number", indent);  //https://www.tabnine.com/code/java/methods/javax.xml.transform.TransformerFactory/setAttribute
+            //Transformer transformer = transformerFactory.newTransformer(new StreamSource(new StringReader(readPrettyPrintXslt())));
             return transformerFactory.newTransformer();
         } catch (TransformerConfigurationException ex) {
             throw new IllegalStateException(ex);

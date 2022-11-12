@@ -15,6 +15,9 @@ import java.io.OutputStream;
 import java.io.Reader;
 import java.nio.charset.StandardCharsets;
 
+/**
+ * .
+ */
 public final class PaymentInitiation {
     private PaymentInitiation() {
     }
@@ -25,18 +28,29 @@ public final class PaymentInitiation {
 
     public static final Class<Document> DECLARED_TYPE=Document.class;
 
-    public static Document readDocument(final InputStream in) throws IOException {
+    /**
+     * Reads a document.
+     * @param in Input stream.
+     * @return Document.
+     * @throws IOException Thrown in case of I/O exception.
+     */
+    public static Document readDocument(InputStream in) throws IOException {
         NewSchemaOperator newSchemaOperator=()->Schemas.createSchema(XML_SCHEMA_RESOURCE_NAME);
-        newSchemaOperator=null;
         try (Reader reader=new InputStreamReader(in,StandardCharsets.UTF_8)) {
             Source source=new StreamSource(reader);
             return JAXBElements.read(DECLARED_TYPE,newSchemaOperator,(u,d)->u.unmarshal(source,d));
         }
     }
 
-    public static void writeDocument(final Document value, final OutputStream out) throws IOException {
+    /**
+     * Writes a document.
+     * @param document Document.
+     * @param out Output stream.
+     * @throws IOException Thrown in case of I/O exception.
+     */
+    public static void writeDocument(Document document,
+                                     OutputStream out) throws IOException {
         NewSchemaOperator newSchemaOperator=()->Schemas.createSchema(XML_SCHEMA_RESOURCE_NAME);
-        newSchemaOperator=null;
-        JAXBElements.write(ROOT_ELEMENT_NAME,DECLARED_TYPE,value,newSchemaOperator,(m, e)->m.marshal(e,out));
+        JAXBElements.write(ROOT_ELEMENT_NAME,DECLARED_TYPE,document,newSchemaOperator,(m, e)->m.marshal(e,out));
     }
 }

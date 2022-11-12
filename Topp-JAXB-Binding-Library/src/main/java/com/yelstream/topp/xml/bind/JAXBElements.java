@@ -119,7 +119,7 @@ public class JAXBElements {
         try {
             Schema schema=newSchemaOperator==null?null:newSchemaOperator.newSchema();
             return JAXBElements.readValue(declaredType,schema,unmarshalOperator);
-        } catch (JAXBException|SAXException ex) {
+        } catch (JAXBException | SAXException ex) {
             throw new IOException("Failure to read document!",ex);
         }
     }
@@ -143,7 +143,7 @@ public class JAXBElements {
             Schema schema=newSchemaOperator==null?null:newSchemaOperator.newSchema();
             JAXBElement<T> element=JAXBElements.createJAXBElement(name,declaredType,value);
             JAXBElements.writeJAXBElement(element,schema,marshalOperator);
-        } catch (JAXBException|SAXException ex) {
+        } catch (JAXBException | SAXException ex) {
             throw new IOException("Failure to write document!",ex);
         }
     }
