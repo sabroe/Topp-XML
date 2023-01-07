@@ -1,9 +1,8 @@
 package com.yelstream.topp.xml.bind;
 
+import jakarta.xml.bind.JAXBContext;
+import jakarta.xml.bind.JAXBException;
 import lombok.experimental.UtilityClass;
-
-import javax.xml.bind.JAXBContext;
-import javax.xml.bind.JAXBException;
 
 /**
  * Utility addressing instances of {@link JAXBContext}.

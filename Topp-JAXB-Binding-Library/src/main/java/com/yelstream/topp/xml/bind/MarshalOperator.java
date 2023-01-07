@@ -1,7 +1,7 @@
 package com.yelstream.topp.xml.bind;
 
-import javax.xml.bind.JAXBException;
-import javax.xml.bind.Marshaller;
+import jakarta.xml.bind.JAXBException;
+import jakarta.xml.bind.Marshaller;
 
 /**
  * Marshal operator.

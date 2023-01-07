@@ -33,6 +33,12 @@ dependencies {
     annotationProcessor 'org.projectlombok:lombok:1.18.24'
 
     implementation 'org.slf4j:slf4j-api:2.0.6'
+
     implementation project(':Topp-JAXB-Binding-Library')
+
+    //See https://eclipse-ee4j.github.io/jaxb-ri/ !
+    api 'jakarta.xml.bind:jakarta.xml.bind-api:4.0.0'
+    api 'com.sun.xml.bind:jaxb-impl:4.0.1'
+
     testImplementation 'org.junit.jupiter:junit-jupiter:5.6.2'
 }
