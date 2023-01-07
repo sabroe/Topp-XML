@@ -1,11 +1,10 @@
 plugins {
     id 'java-library-distribution'
-    id 'org.unbroken-dome.xjc' version '2.0.0'
-}
+    id 'jacoco'
+    id 'maven-publish'
+    id 'signing'
 
-repositories {
-    mavenCentral()
-    maven { url 'https://oss.sonatype.org/content/repositories/snapshots/' }
+    id 'org.unbroken-dome.xjc' version '2.0.0'
 }
 
 sourceSets {
@@ -29,12 +28,11 @@ xjcGenerate {
 }
 */
 
-java {
-//    withJavadocJar()
-    withSourcesJar()
-}
-
 dependencies {
+    compileOnly 'org.projectlombok:lombok:1.18.24'
+    annotationProcessor 'org.projectlombok:lombok:1.18.24'
+
+    implementation 'org.slf4j:slf4j-api:2.0.6'
     implementation project(':Topp-JAXB-Binding-Library')
     testImplementation 'org.junit.jupiter:junit-jupiter:5.6.2'
 }

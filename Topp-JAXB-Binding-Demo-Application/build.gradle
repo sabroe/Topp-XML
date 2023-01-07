@@ -1,25 +1,10 @@
 plugins {
     id 'java-library-distribution'
+    id 'jacoco'
+    id 'maven-publish'
+    id 'signing'
+
     id 'org.unbroken-dome.xjc' version '2.0.0'
-}
-
-repositories {
-    mavenCentral()
-    maven { url 'https://oss.sonatype.org/content/repositories/snapshots/' }
-}
-
-dependencies {
-    compileOnly 'org.projectlombok:lombok:1.18.24'
-    annotationProcessor 'org.projectlombok:lombok:1.18.24'
-
-//    api 'javax.xml.bind:jaxb-api:2.3.1'
-//    api 'javax.activation:activation:1.1'
-//    api 'org.glassfish.jaxb:jaxb-runtime:2.3.1'
-}
-
-java {
-    withJavadocJar()
-    withSourcesJar()
 }
 
 xjc {
@@ -33,4 +18,15 @@ sourceSets {
     main {
         xjcGenerateEpisode = true
     }
+}
+
+dependencies {
+    compileOnly 'org.projectlombok:lombok:1.18.24'
+    annotationProcessor 'org.projectlombok:lombok:1.18.24'
+
+    implementation 'org.slf4j:slf4j-api:2.0.6'
+
+//    api 'javax.xml.bind:jaxb-api:2.3.1'
+//    api 'javax.activation:activation:1.1'
+//    api 'org.glassfish.jaxb:jaxb-runtime:2.3.1'
 }
