@@ -4,8 +4,8 @@
 module com.yelstream.topp.jaxb.binding {
     requires static lombok;
 
-    requires transitive jakarta.activation;
-    requires transitive jakarta.xml.bind;
+    requires transitive java.xml;
+    requires jakarta.xml.bind;
 
     exports com.yelstream.topp.xml.bind;
     exports com.yelstream.topp.xml.validation;

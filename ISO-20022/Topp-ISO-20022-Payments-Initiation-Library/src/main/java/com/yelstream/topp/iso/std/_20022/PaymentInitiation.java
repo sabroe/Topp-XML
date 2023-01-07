@@ -22,10 +22,19 @@ public final class PaymentInitiation {
     private PaymentInitiation() {
     }
 
+    /**
+     * .
+     */
     public static final String XML_SCHEMA_RESOURCE_NAME="xsd/EPC121-16_2019_V1.0_pain.001.001.03.xsd";
 
+    /**
+     * .
+     */
     public static final QName ROOT_ELEMENT_NAME=new QName("urn:iso:std:iso:20022:tech:xsd:pain.001.001.03","Document");
 
+    /**
+     * .
+     */
     public static final Class<Document> DECLARED_TYPE=Document.class;
 
     /**

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<jaxb:bindings
+        version="2.1"
+        xmlns:jaxb="http://java.sun.com/xml/ns/jaxb"
+        xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+    <jaxb:bindings schemaLocation="resources/xsd/payments-initiation/pain.001.001.02.xsd" node="//xs:schema">
+        <jaxb:schemaBindings>
+            <jaxb:package name="org.iso20022.std.iso._20022.tech.pain_001_001_02"/>
+        </jaxb:schemaBindings>
+    </jaxb:bindings>
+XXX
+<!--
+    <jaxb:bindings scd="x-schema::iso" xmlns:a="urn:iso">
+        <jaxb:schemaBindings>
+            <jaxb:package name="org.iso20022.std.iso"/>
+        </jaxb:schemaBindings>
+    </jaxb:bindings>
+-->
+
+</jaxb:bindings>
