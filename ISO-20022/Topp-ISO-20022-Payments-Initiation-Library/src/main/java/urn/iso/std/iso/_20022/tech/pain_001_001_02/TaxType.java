@@ -25,10 +25,10 @@ import jakarta.xml.bind.annotation.XmlType;
  *   <complexContent>
  *     <restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
  *       <sequence>
- *         <element name="CtgyDesc" type="{urn:iso:std:iso:20022:tech:xsd:qqq.pain.001.001.02.xxx.yyy}Max35Text" minOccurs="0"/>
- *         <element name="Rate" type="{urn:iso:std:iso:20022:tech:xsd:qqq.pain.001.001.02.xxx.yyy}PercentageRate" minOccurs="0"/>
- *         <element name="TaxblBaseAmt" type="{urn:iso:std:iso:20022:tech:xsd:qqq.pain.001.001.02.xxx.yyy}CurrencyAndAmount" minOccurs="0"/>
- *         <element name="Amt" type="{urn:iso:std:iso:20022:tech:xsd:qqq.pain.001.001.02.xxx.yyy}CurrencyAndAmount" minOccurs="0"/>
+ *         <element name="CtgyDesc" type="{urn:iso:std:iso:20022:tech:xsd:pain.001.001.02}Max35Text" minOccurs="0"/>
+ *         <element name="Rate" type="{urn:iso:std:iso:20022:tech:xsd:pain.001.001.02}PercentageRate" minOccurs="0"/>
+ *         <element name="TaxblBaseAmt" type="{urn:iso:std:iso:20022:tech:xsd:pain.001.001.02}CurrencyAndAmount" minOccurs="0"/>
+ *         <element name="Amt" type="{urn:iso:std:iso:20022:tech:xsd:pain.001.001.02}CurrencyAndAmount" minOccurs="0"/>
  *       </sequence>
  *     </restriction>
  *   </complexContent>
@@ -44,20 +44,20 @@ import jakarta.xml.bind.annotation.XmlType;
     "taxblBaseAmt",
     "amt"
 })
-@Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.1", date = "2023-01-07T21:58:34+01:00")
+@Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.1", date = "2023-01-08T20:53:23+01:00")
 public class TaxType {
 
     @XmlElement(name = "CtgyDesc")
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.1", date = "2023-01-07T21:58:34+01:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.1", date = "2023-01-08T20:53:23+01:00")
     protected String ctgyDesc;
     @XmlElement(name = "Rate")
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.1", date = "2023-01-07T21:58:34+01:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.1", date = "2023-01-08T20:53:23+01:00")
     protected BigDecimal rate;
     @XmlElement(name = "TaxblBaseAmt")
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.1", date = "2023-01-07T21:58:34+01:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.1", date = "2023-01-08T20:53:23+01:00")
     protected CurrencyAndAmount taxblBaseAmt;
     @XmlElement(name = "Amt")
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.1", date = "2023-01-07T21:58:34+01:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.1", date = "2023-01-08T20:53:23+01:00")
     protected CurrencyAndAmount amt;
 
     /**
@@ -68,7 +68,7 @@ public class TaxType {
      *     {@link String }
      *     
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.1", date = "2023-01-07T21:58:34+01:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.1", date = "2023-01-08T20:53:23+01:00")
     public String getCtgyDesc() {
         return ctgyDesc;
     }
@@ -81,7 +81,7 @@ public class TaxType {
      *     {@link String }
      *     
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.1", date = "2023-01-07T21:58:34+01:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.1", date = "2023-01-08T20:53:23+01:00")
     public void setCtgyDesc(String value) {
         this.ctgyDesc = value;
     }
@@ -94,7 +94,7 @@ public class TaxType {
      *     {@link BigDecimal }
      *     
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.1", date = "2023-01-07T21:58:34+01:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.1", date = "2023-01-08T20:53:23+01:00")
     public BigDecimal getRate() {
         return rate;
     }
@@ -107,7 +107,7 @@ public class TaxType {
      *     {@link BigDecimal }
      *     
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.1", date = "2023-01-07T21:58:34+01:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.1", date = "2023-01-08T20:53:23+01:00")
     public void setRate(BigDecimal value) {
         this.rate = value;
     }
@@ -120,7 +120,7 @@ public class TaxType {
      *     {@link CurrencyAndAmount }
      *     
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.1", date = "2023-01-07T21:58:34+01:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.1", date = "2023-01-08T20:53:23+01:00")
     public CurrencyAndAmount getTaxblBaseAmt() {
         return taxblBaseAmt;
     }
@@ -133,7 +133,7 @@ public class TaxType {
      *     {@link CurrencyAndAmount }
      *     
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.1", date = "2023-01-07T21:58:34+01:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.1", date = "2023-01-08T20:53:23+01:00")
     public void setTaxblBaseAmt(CurrencyAndAmount value) {
         this.taxblBaseAmt = value;
     }
@@ -146,7 +146,7 @@ public class TaxType {
      *     {@link CurrencyAndAmount }
      *     
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.1", date = "2023-01-07T21:58:34+01:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.1", date = "2023-01-08T20:53:23+01:00")
     public CurrencyAndAmount getAmt() {
         return amt;
     }
@@ -159,7 +159,7 @@ public class TaxType {
      *     {@link CurrencyAndAmount }
      *     
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.1", date = "2023-01-07T21:58:34+01:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.1", date = "2023-01-08T20:53:23+01:00")
     public void setAmt(CurrencyAndAmount value) {
         this.amt = value;
     }

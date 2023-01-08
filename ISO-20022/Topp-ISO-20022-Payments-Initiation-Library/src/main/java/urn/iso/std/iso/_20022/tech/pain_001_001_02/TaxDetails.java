@@ -24,8 +24,8 @@ import jakarta.xml.bind.annotation.XmlType;
  *   <complexContent>
  *     <restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
  *       <sequence>
- *         <element name="CertId" type="{urn:iso:std:iso:20022:tech:xsd:qqq.pain.001.001.02.xxx.yyy}Max35Text" minOccurs="0"/>
- *         <element name="TaxTp" type="{urn:iso:std:iso:20022:tech:xsd:qqq.pain.001.001.02.xxx.yyy}TaxType" minOccurs="0"/>
+ *         <element name="CertId" type="{urn:iso:std:iso:20022:tech:xsd:pain.001.001.02}Max35Text" minOccurs="0"/>
+ *         <element name="TaxTp" type="{urn:iso:std:iso:20022:tech:xsd:pain.001.001.02}TaxType" minOccurs="0"/>
  *       </sequence>
  *     </restriction>
  *   </complexContent>
@@ -39,14 +39,14 @@ import jakarta.xml.bind.annotation.XmlType;
     "certId",
     "taxTp"
 })
-@Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.1", date = "2023-01-07T21:58:34+01:00")
+@Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.1", date = "2023-01-08T20:53:23+01:00")
 public class TaxDetails {
 
     @XmlElement(name = "CertId")
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.1", date = "2023-01-07T21:58:34+01:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.1", date = "2023-01-08T20:53:23+01:00")
     protected String certId;
     @XmlElement(name = "TaxTp")
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.1", date = "2023-01-07T21:58:34+01:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.1", date = "2023-01-08T20:53:23+01:00")
     protected TaxType taxTp;
 
     /**
@@ -57,7 +57,7 @@ public class TaxDetails {
      *     {@link String }
      *     
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.1", date = "2023-01-07T21:58:34+01:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.1", date = "2023-01-08T20:53:23+01:00")
     public String getCertId() {
         return certId;
     }
@@ -70,7 +70,7 @@ public class TaxDetails {
      *     {@link String }
      *     
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.1", date = "2023-01-07T21:58:34+01:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.1", date = "2023-01-08T20:53:23+01:00")
     public void setCertId(String value) {
         this.certId = value;
     }
@@ -83,7 +83,7 @@ public class TaxDetails {
      *     {@link TaxType }
      *     
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.1", date = "2023-01-07T21:58:34+01:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.1", date = "2023-01-08T20:53:23+01:00")
     public TaxType getTaxTp() {
         return taxTp;
     }
@@ -96,7 +96,7 @@ public class TaxDetails {
      *     {@link TaxType }
      *     
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.1", date = "2023-01-07T21:58:34+01:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.1", date = "2023-01-08T20:53:23+01:00")
     public void setTaxTp(TaxType value) {
         this.taxTp = value;
     }

@@ -24,9 +24,9 @@ import jakarta.xml.bind.annotation.XmlType;
  *   <complexContent>
  *     <restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
  *       <sequence>
- *         <element name="Id" type="{urn:iso:std:iso:20022:tech:xsd:qqq.pain.001.001.02.xxx.yyy}Max35Text" minOccurs="0"/>
- *         <element name="Nm" type="{urn:iso:std:iso:20022:tech:xsd:qqq.pain.001.001.02.xxx.yyy}Max35Text" minOccurs="0"/>
- *         <element name="PstlAdr" type="{urn:iso:std:iso:20022:tech:xsd:qqq.pain.001.001.02.xxx.yyy}PostalAddress1" minOccurs="0"/>
+ *         <element name="Id" type="{urn:iso:std:iso:20022:tech:xsd:pain.001.001.02}Max35Text" minOccurs="0"/>
+ *         <element name="Nm" type="{urn:iso:std:iso:20022:tech:xsd:pain.001.001.02}Max35Text" minOccurs="0"/>
+ *         <element name="PstlAdr" type="{urn:iso:std:iso:20022:tech:xsd:pain.001.001.02}PostalAddress1" minOccurs="0"/>
  *       </sequence>
  *     </restriction>
  *   </complexContent>
@@ -41,17 +41,17 @@ import jakarta.xml.bind.annotation.XmlType;
     "nm",
     "pstlAdr"
 })
-@Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.1", date = "2023-01-07T21:58:34+01:00")
+@Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.1", date = "2023-01-08T20:53:23+01:00")
 public class BranchData {
 
     @XmlElement(name = "Id")
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.1", date = "2023-01-07T21:58:34+01:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.1", date = "2023-01-08T20:53:23+01:00")
     protected String id;
     @XmlElement(name = "Nm")
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.1", date = "2023-01-07T21:58:34+01:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.1", date = "2023-01-08T20:53:23+01:00")
     protected String nm;
     @XmlElement(name = "PstlAdr")
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.1", date = "2023-01-07T21:58:34+01:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.1", date = "2023-01-08T20:53:23+01:00")
     protected PostalAddress1 pstlAdr;
 
     /**
@@ -62,7 +62,7 @@ public class BranchData {
      *     {@link String }
      *     
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.1", date = "2023-01-07T21:58:34+01:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.1", date = "2023-01-08T20:53:23+01:00")
     public String getId() {
         return id;
     }
@@ -75,7 +75,7 @@ public class BranchData {
      *     {@link String }
      *     
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.1", date = "2023-01-07T21:58:34+01:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.1", date = "2023-01-08T20:53:23+01:00")
     public void setId(String value) {
         this.id = value;
     }
@@ -88,7 +88,7 @@ public class BranchData {
      *     {@link String }
      *     
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.1", date = "2023-01-07T21:58:34+01:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.1", date = "2023-01-08T20:53:23+01:00")
     public String getNm() {
         return nm;
     }
@@ -101,7 +101,7 @@ public class BranchData {
      *     {@link String }
      *     
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.1", date = "2023-01-07T21:58:34+01:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.1", date = "2023-01-08T20:53:23+01:00")
     public void setNm(String value) {
         this.nm = value;
     }
@@ -114,7 +114,7 @@ public class BranchData {
      *     {@link PostalAddress1 }
      *     
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.1", date = "2023-01-07T21:58:34+01:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.1", date = "2023-01-08T20:53:23+01:00")
     public PostalAddress1 getPstlAdr() {
         return pstlAdr;
     }
@@ -127,7 +127,7 @@ public class BranchData {
      *     {@link PostalAddress1 }
      *     
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.1", date = "2023-01-07T21:58:34+01:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.1", date = "2023-01-08T20:53:23+01:00")
     public void setPstlAdr(PostalAddress1 value) {
         this.pstlAdr = value;
     }

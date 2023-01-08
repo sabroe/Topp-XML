@@ -24,8 +24,8 @@ import jakarta.xml.bind.annotation.XmlType;
  *   <complexContent>
  *     <restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
  *       <sequence>
- *         <element name="RfrdDocTp" type="{urn:iso:std:iso:20022:tech:xsd:qqq.pain.001.001.02.xxx.yyy}ReferredDocumentType1" minOccurs="0"/>
- *         <element name="RfrdDocNb" type="{urn:iso:std:iso:20022:tech:xsd:qqq.pain.001.001.02.xxx.yyy}Max35Text" minOccurs="0"/>
+ *         <element name="RfrdDocTp" type="{urn:iso:std:iso:20022:tech:xsd:pain.001.001.02}ReferredDocumentType1" minOccurs="0"/>
+ *         <element name="RfrdDocNb" type="{urn:iso:std:iso:20022:tech:xsd:pain.001.001.02}Max35Text" minOccurs="0"/>
  *       </sequence>
  *     </restriction>
  *   </complexContent>
@@ -39,14 +39,14 @@ import jakarta.xml.bind.annotation.XmlType;
     "rfrdDocTp",
     "rfrdDocNb"
 })
-@Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.1", date = "2023-01-07T21:58:34+01:00")
+@Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.1", date = "2023-01-08T20:53:23+01:00")
 public class ReferredDocumentInformation1 {
 
     @XmlElement(name = "RfrdDocTp")
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.1", date = "2023-01-07T21:58:34+01:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.1", date = "2023-01-08T20:53:23+01:00")
     protected ReferredDocumentType1 rfrdDocTp;
     @XmlElement(name = "RfrdDocNb")
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.1", date = "2023-01-07T21:58:34+01:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.1", date = "2023-01-08T20:53:23+01:00")
     protected String rfrdDocNb;
 
     /**
@@ -57,7 +57,7 @@ public class ReferredDocumentInformation1 {
      *     {@link ReferredDocumentType1 }
      *     
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.1", date = "2023-01-07T21:58:34+01:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.1", date = "2023-01-08T20:53:23+01:00")
     public ReferredDocumentType1 getRfrdDocTp() {
         return rfrdDocTp;
     }
@@ -70,7 +70,7 @@ public class ReferredDocumentInformation1 {
      *     {@link ReferredDocumentType1 }
      *     
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.1", date = "2023-01-07T21:58:34+01:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.1", date = "2023-01-08T20:53:23+01:00")
     public void setRfrdDocTp(ReferredDocumentType1 value) {
         this.rfrdDocTp = value;
     }
@@ -83,7 +83,7 @@ public class ReferredDocumentInformation1 {
      *     {@link String }
      *     
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.1", date = "2023-01-07T21:58:34+01:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.1", date = "2023-01-08T20:53:23+01:00")
     public String getRfrdDocNb() {
         return rfrdDocNb;
     }
@@ -96,7 +96,7 @@ public class ReferredDocumentInformation1 {
      *     {@link String }
      *     
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.1", date = "2023-01-07T21:58:34+01:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.1", date = "2023-01-08T20:53:23+01:00")
     public void setRfrdDocNb(String value) {
         this.rfrdDocNb = value;
     }

@@ -26,9 +26,9 @@ import jakarta.xml.bind.annotation.XmlType;
  *   <complexContent>
  *     <restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
  *       <sequence>
- *         <element name="XchgRate" type="{urn:iso:std:iso:20022:tech:xsd:qqq.pain.001.001.02.xxx.yyy}BaseOneRate" minOccurs="0"/>
- *         <element name="RateTp" type="{urn:iso:std:iso:20022:tech:xsd:qqq.pain.001.001.02.xxx.yyy}ExchangeRateType1Code" minOccurs="0"/>
- *         <element name="CtrctId" type="{urn:iso:std:iso:20022:tech:xsd:qqq.pain.001.001.02.xxx.yyy}Max35Text" minOccurs="0"/>
+ *         <element name="XchgRate" type="{urn:iso:std:iso:20022:tech:xsd:pain.001.001.02}BaseOneRate" minOccurs="0"/>
+ *         <element name="RateTp" type="{urn:iso:std:iso:20022:tech:xsd:pain.001.001.02}ExchangeRateType1Code" minOccurs="0"/>
+ *         <element name="CtrctId" type="{urn:iso:std:iso:20022:tech:xsd:pain.001.001.02}Max35Text" minOccurs="0"/>
  *       </sequence>
  *     </restriction>
  *   </complexContent>
@@ -43,18 +43,18 @@ import jakarta.xml.bind.annotation.XmlType;
     "rateTp",
     "ctrctId"
 })
-@Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.1", date = "2023-01-07T21:58:34+01:00")
+@Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.1", date = "2023-01-08T20:53:23+01:00")
 public class ExchangeRateInformation1 {
 
     @XmlElement(name = "XchgRate")
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.1", date = "2023-01-07T21:58:34+01:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.1", date = "2023-01-08T20:53:23+01:00")
     protected BigDecimal xchgRate;
     @XmlElement(name = "RateTp")
     @XmlSchemaType(name = "string")
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.1", date = "2023-01-07T21:58:34+01:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.1", date = "2023-01-08T20:53:23+01:00")
     protected ExchangeRateType1Code rateTp;
     @XmlElement(name = "CtrctId")
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.1", date = "2023-01-07T21:58:34+01:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.1", date = "2023-01-08T20:53:23+01:00")
     protected String ctrctId;
 
     /**
@@ -65,7 +65,7 @@ public class ExchangeRateInformation1 {
      *     {@link BigDecimal }
      *     
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.1", date = "2023-01-07T21:58:34+01:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.1", date = "2023-01-08T20:53:23+01:00")
     public BigDecimal getXchgRate() {
         return xchgRate;
     }
@@ -78,7 +78,7 @@ public class ExchangeRateInformation1 {
      *     {@link BigDecimal }
      *     
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.1", date = "2023-01-07T21:58:34+01:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.1", date = "2023-01-08T20:53:23+01:00")
     public void setXchgRate(BigDecimal value) {
         this.xchgRate = value;
     }
@@ -91,7 +91,7 @@ public class ExchangeRateInformation1 {
      *     {@link ExchangeRateType1Code }
      *     
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.1", date = "2023-01-07T21:58:34+01:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.1", date = "2023-01-08T20:53:23+01:00")
     public ExchangeRateType1Code getRateTp() {
         return rateTp;
     }
@@ -104,7 +104,7 @@ public class ExchangeRateInformation1 {
      *     {@link ExchangeRateType1Code }
      *     
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.1", date = "2023-01-07T21:58:34+01:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.1", date = "2023-01-08T20:53:23+01:00")
     public void setRateTp(ExchangeRateType1Code value) {
         this.rateTp = value;
     }
@@ -117,7 +117,7 @@ public class ExchangeRateInformation1 {
      *     {@link String }
      *     
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.1", date = "2023-01-07T21:58:34+01:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.1", date = "2023-01-08T20:53:23+01:00")
     public String getCtrctId() {
         return ctrctId;
     }
@@ -130,7 +130,7 @@ public class ExchangeRateInformation1 {
      *     {@link String }
      *     
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.1", date = "2023-01-07T21:58:34+01:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.1", date = "2023-01-08T20:53:23+01:00")
     public void setCtrctId(String value) {
         this.ctrctId = value;
     }

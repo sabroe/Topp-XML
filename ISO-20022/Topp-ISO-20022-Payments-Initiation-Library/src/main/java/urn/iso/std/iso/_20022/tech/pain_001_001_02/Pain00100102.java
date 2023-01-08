@@ -26,8 +26,8 @@ import jakarta.xml.bind.annotation.XmlType;
  *   <complexContent>
  *     <restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
  *       <sequence>
- *         <element name="GrpHdr" type="{urn:iso:std:iso:20022:tech:xsd:qqq.pain.001.001.02.xxx.yyy}GroupHeader1"/>
- *         <element name="PmtInf" type="{urn:iso:std:iso:20022:tech:xsd:qqq.pain.001.001.02.xxx.yyy}PaymentInstructionInformation1" maxOccurs="unbounded"/>
+ *         <element name="GrpHdr" type="{urn:iso:std:iso:20022:tech:xsd:pain.001.001.02}GroupHeader1"/>
+ *         <element name="PmtInf" type="{urn:iso:std:iso:20022:tech:xsd:pain.001.001.02}PaymentInstructionInformation1" maxOccurs="unbounded"/>
  *       </sequence>
  *     </restriction>
  *   </complexContent>
@@ -41,14 +41,14 @@ import jakarta.xml.bind.annotation.XmlType;
     "grpHdr",
     "pmtInf"
 })
-@Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.1", date = "2023-01-07T21:58:34+01:00")
+@Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.1", date = "2023-01-08T20:53:23+01:00")
 public class Pain00100102 {
 
     @XmlElement(name = "GrpHdr", required = true)
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.1", date = "2023-01-07T21:58:34+01:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.1", date = "2023-01-08T20:53:23+01:00")
     protected GroupHeader1 grpHdr;
     @XmlElement(name = "PmtInf", required = true)
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.1", date = "2023-01-07T21:58:34+01:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.1", date = "2023-01-08T20:53:23+01:00")
     protected List<PaymentInstructionInformation1> pmtInf;
 
     /**
@@ -59,7 +59,7 @@ public class Pain00100102 {
      *     {@link GroupHeader1 }
      *     
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.1", date = "2023-01-07T21:58:34+01:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.1", date = "2023-01-08T20:53:23+01:00")
     public GroupHeader1 getGrpHdr() {
         return grpHdr;
     }
@@ -72,7 +72,7 @@ public class Pain00100102 {
      *     {@link GroupHeader1 }
      *     
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.1", date = "2023-01-07T21:58:34+01:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.1", date = "2023-01-08T20:53:23+01:00")
     public void setGrpHdr(GroupHeader1 value) {
         this.grpHdr = value;
     }
@@ -101,7 +101,7 @@ public class Pain00100102 {
      * @return
      *     The value of the pmtInf property.
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.1", date = "2023-01-07T21:58:34+01:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.1", date = "2023-01-08T20:53:23+01:00")
     public List<PaymentInstructionInformation1> getPmtInf() {
         if (pmtInf == null) {
             pmtInf = new ArrayList<>();

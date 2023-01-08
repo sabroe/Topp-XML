@@ -29,15 +29,15 @@ import jakarta.xml.bind.annotation.XmlType;
  *   <complexContent>
  *     <restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
  *       <sequence>
- *         <element name="MsgId" type="{urn:iso:std:iso:20022:tech:xsd:qqq.pain.001.001.02.xxx.yyy}Max35Text"/>
- *         <element name="CreDtTm" type="{urn:iso:std:iso:20022:tech:xsd:qqq.pain.001.001.02.xxx.yyy}ISODateTime"/>
- *         <element name="Authstn" type="{urn:iso:std:iso:20022:tech:xsd:qqq.pain.001.001.02.xxx.yyy}Max128Text" maxOccurs="2" minOccurs="0"/>
- *         <element name="BtchBookg" type="{urn:iso:std:iso:20022:tech:xsd:qqq.pain.001.001.02.xxx.yyy}BatchBookingIndicator" minOccurs="0"/>
- *         <element name="NbOfTxs" type="{urn:iso:std:iso:20022:tech:xsd:qqq.pain.001.001.02.xxx.yyy}Max15NumericText"/>
- *         <element name="CtrlSum" type="{urn:iso:std:iso:20022:tech:xsd:qqq.pain.001.001.02.xxx.yyy}DecimalNumber" minOccurs="0"/>
- *         <element name="Grpg" type="{urn:iso:std:iso:20022:tech:xsd:qqq.pain.001.001.02.xxx.yyy}Grouping1Code"/>
- *         <element name="InitgPty" type="{urn:iso:std:iso:20022:tech:xsd:qqq.pain.001.001.02.xxx.yyy}PartyIdentification8"/>
- *         <element name="FwdgAgt" type="{urn:iso:std:iso:20022:tech:xsd:qqq.pain.001.001.02.xxx.yyy}BranchAndFinancialInstitutionIdentification3" minOccurs="0"/>
+ *         <element name="MsgId" type="{urn:iso:std:iso:20022:tech:xsd:pain.001.001.02}Max35Text"/>
+ *         <element name="CreDtTm" type="{urn:iso:std:iso:20022:tech:xsd:pain.001.001.02}ISODateTime"/>
+ *         <element name="Authstn" type="{urn:iso:std:iso:20022:tech:xsd:pain.001.001.02}Max128Text" maxOccurs="2" minOccurs="0"/>
+ *         <element name="BtchBookg" type="{urn:iso:std:iso:20022:tech:xsd:pain.001.001.02}BatchBookingIndicator" minOccurs="0"/>
+ *         <element name="NbOfTxs" type="{urn:iso:std:iso:20022:tech:xsd:pain.001.001.02}Max15NumericText"/>
+ *         <element name="CtrlSum" type="{urn:iso:std:iso:20022:tech:xsd:pain.001.001.02}DecimalNumber" minOccurs="0"/>
+ *         <element name="Grpg" type="{urn:iso:std:iso:20022:tech:xsd:pain.001.001.02}Grouping1Code"/>
+ *         <element name="InitgPty" type="{urn:iso:std:iso:20022:tech:xsd:pain.001.001.02}PartyIdentification8"/>
+ *         <element name="FwdgAgt" type="{urn:iso:std:iso:20022:tech:xsd:pain.001.001.02}BranchAndFinancialInstitutionIdentification3" minOccurs="0"/>
  *       </sequence>
  *     </restriction>
  *   </complexContent>
@@ -58,37 +58,37 @@ import jakarta.xml.bind.annotation.XmlType;
     "initgPty",
     "fwdgAgt"
 })
-@Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.1", date = "2023-01-07T21:58:34+01:00")
+@Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.1", date = "2023-01-08T20:53:23+01:00")
 public class GroupHeader1 {
 
     @XmlElement(name = "MsgId", required = true)
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.1", date = "2023-01-07T21:58:34+01:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.1", date = "2023-01-08T20:53:23+01:00")
     protected String msgId;
     @XmlElement(name = "CreDtTm", required = true)
     @XmlSchemaType(name = "dateTime")
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.1", date = "2023-01-07T21:58:34+01:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.1", date = "2023-01-08T20:53:23+01:00")
     protected XMLGregorianCalendar creDtTm;
     @XmlElement(name = "Authstn")
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.1", date = "2023-01-07T21:58:34+01:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.1", date = "2023-01-08T20:53:23+01:00")
     protected List<String> authstn;
     @XmlElement(name = "BtchBookg")
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.1", date = "2023-01-07T21:58:34+01:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.1", date = "2023-01-08T20:53:23+01:00")
     protected Boolean btchBookg;
     @XmlElement(name = "NbOfTxs", required = true)
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.1", date = "2023-01-07T21:58:34+01:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.1", date = "2023-01-08T20:53:23+01:00")
     protected String nbOfTxs;
     @XmlElement(name = "CtrlSum")
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.1", date = "2023-01-07T21:58:34+01:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.1", date = "2023-01-08T20:53:23+01:00")
     protected BigDecimal ctrlSum;
     @XmlElement(name = "Grpg", required = true)
     @XmlSchemaType(name = "string")
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.1", date = "2023-01-07T21:58:34+01:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.1", date = "2023-01-08T20:53:23+01:00")
     protected Grouping1Code grpg;
     @XmlElement(name = "InitgPty", required = true)
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.1", date = "2023-01-07T21:58:34+01:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.1", date = "2023-01-08T20:53:23+01:00")
     protected PartyIdentification8 initgPty;
     @XmlElement(name = "FwdgAgt")
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.1", date = "2023-01-07T21:58:34+01:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.1", date = "2023-01-08T20:53:23+01:00")
     protected BranchAndFinancialInstitutionIdentification3 fwdgAgt;
 
     /**
@@ -99,7 +99,7 @@ public class GroupHeader1 {
      *     {@link String }
      *     
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.1", date = "2023-01-07T21:58:34+01:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.1", date = "2023-01-08T20:53:23+01:00")
     public String getMsgId() {
         return msgId;
     }
@@ -112,7 +112,7 @@ public class GroupHeader1 {
      *     {@link String }
      *     
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.1", date = "2023-01-07T21:58:34+01:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.1", date = "2023-01-08T20:53:23+01:00")
     public void setMsgId(String value) {
         this.msgId = value;
     }
@@ -125,7 +125,7 @@ public class GroupHeader1 {
      *     {@link XMLGregorianCalendar }
      *     
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.1", date = "2023-01-07T21:58:34+01:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.1", date = "2023-01-08T20:53:23+01:00")
     public XMLGregorianCalendar getCreDtTm() {
         return creDtTm;
     }
@@ -138,7 +138,7 @@ public class GroupHeader1 {
      *     {@link XMLGregorianCalendar }
      *     
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.1", date = "2023-01-07T21:58:34+01:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.1", date = "2023-01-08T20:53:23+01:00")
     public void setCreDtTm(XMLGregorianCalendar value) {
         this.creDtTm = value;
     }
@@ -167,7 +167,7 @@ public class GroupHeader1 {
      * @return
      *     The value of the authstn property.
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.1", date = "2023-01-07T21:58:34+01:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.1", date = "2023-01-08T20:53:23+01:00")
     public List<String> getAuthstn() {
         if (authstn == null) {
             authstn = new ArrayList<>();
@@ -183,7 +183,7 @@ public class GroupHeader1 {
      *     {@link Boolean }
      *     
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.1", date = "2023-01-07T21:58:34+01:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.1", date = "2023-01-08T20:53:23+01:00")
     public Boolean getBtchBookg() {
         return btchBookg;
     }
@@ -196,7 +196,7 @@ public class GroupHeader1 {
      *     {@link Boolean }
      *     
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.1", date = "2023-01-07T21:58:34+01:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.1", date = "2023-01-08T20:53:23+01:00")
     public void setBtchBookg(Boolean value) {
         this.btchBookg = value;
     }
@@ -209,7 +209,7 @@ public class GroupHeader1 {
      *     {@link String }
      *     
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.1", date = "2023-01-07T21:58:34+01:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.1", date = "2023-01-08T20:53:23+01:00")
     public String getNbOfTxs() {
         return nbOfTxs;
     }
@@ -222,7 +222,7 @@ public class GroupHeader1 {
      *     {@link String }
      *     
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.1", date = "2023-01-07T21:58:34+01:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.1", date = "2023-01-08T20:53:23+01:00")
     public void setNbOfTxs(String value) {
         this.nbOfTxs = value;
     }
@@ -235,7 +235,7 @@ public class GroupHeader1 {
      *     {@link BigDecimal }
      *     
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.1", date = "2023-01-07T21:58:34+01:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.1", date = "2023-01-08T20:53:23+01:00")
     public BigDecimal getCtrlSum() {
         return ctrlSum;
     }
@@ -248,7 +248,7 @@ public class GroupHeader1 {
      *     {@link BigDecimal }
      *     
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.1", date = "2023-01-07T21:58:34+01:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.1", date = "2023-01-08T20:53:23+01:00")
     public void setCtrlSum(BigDecimal value) {
         this.ctrlSum = value;
     }
@@ -261,7 +261,7 @@ public class GroupHeader1 {
      *     {@link Grouping1Code }
      *     
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.1", date = "2023-01-07T21:58:34+01:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.1", date = "2023-01-08T20:53:23+01:00")
     public Grouping1Code getGrpg() {
         return grpg;
     }
@@ -274,7 +274,7 @@ public class GroupHeader1 {
      *     {@link Grouping1Code }
      *     
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.1", date = "2023-01-07T21:58:34+01:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.1", date = "2023-01-08T20:53:23+01:00")
     public void setGrpg(Grouping1Code value) {
         this.grpg = value;
     }
@@ -287,7 +287,7 @@ public class GroupHeader1 {
      *     {@link PartyIdentification8 }
      *     
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.1", date = "2023-01-07T21:58:34+01:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.1", date = "2023-01-08T20:53:23+01:00")
     public PartyIdentification8 getInitgPty() {
         return initgPty;
     }
@@ -300,7 +300,7 @@ public class GroupHeader1 {
      *     {@link PartyIdentification8 }
      *     
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.1", date = "2023-01-07T21:58:34+01:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.1", date = "2023-01-08T20:53:23+01:00")
     public void setInitgPty(PartyIdentification8 value) {
         this.initgPty = value;
     }
@@ -313,7 +313,7 @@ public class GroupHeader1 {
      *     {@link BranchAndFinancialInstitutionIdentification3 }
      *     
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.1", date = "2023-01-07T21:58:34+01:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.1", date = "2023-01-08T20:53:23+01:00")
     public BranchAndFinancialInstitutionIdentification3 getFwdgAgt() {
         return fwdgAgt;
     }
@@ -326,7 +326,7 @@ public class GroupHeader1 {
      *     {@link BranchAndFinancialInstitutionIdentification3 }
      *     
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.1", date = "2023-01-07T21:58:34+01:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.1", date = "2023-01-08T20:53:23+01:00")
     public void setFwdgAgt(BranchAndFinancialInstitutionIdentification3 value) {
         this.fwdgAgt = value;
     }

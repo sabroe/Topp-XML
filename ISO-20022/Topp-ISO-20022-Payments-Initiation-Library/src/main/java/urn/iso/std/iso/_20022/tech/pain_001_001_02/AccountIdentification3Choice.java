@@ -25,10 +25,10 @@ import jakarta.xml.bind.annotation.XmlType;
  *     <restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
  *       <sequence>
  *         <choice>
- *           <element name="IBAN" type="{urn:iso:std:iso:20022:tech:xsd:qqq.pain.001.001.02.xxx.yyy}IBANIdentifier"/>
- *           <element name="BBAN" type="{urn:iso:std:iso:20022:tech:xsd:qqq.pain.001.001.02.xxx.yyy}BBANIdentifier"/>
- *           <element name="UPIC" type="{urn:iso:std:iso:20022:tech:xsd:qqq.pain.001.001.02.xxx.yyy}UPICIdentifier"/>
- *           <element name="PrtryAcct" type="{urn:iso:std:iso:20022:tech:xsd:qqq.pain.001.001.02.xxx.yyy}SimpleIdentificationInformation2"/>
+ *           <element name="IBAN" type="{urn:iso:std:iso:20022:tech:xsd:pain.001.001.02}IBANIdentifier"/>
+ *           <element name="BBAN" type="{urn:iso:std:iso:20022:tech:xsd:pain.001.001.02}BBANIdentifier"/>
+ *           <element name="UPIC" type="{urn:iso:std:iso:20022:tech:xsd:pain.001.001.02}UPICIdentifier"/>
+ *           <element name="PrtryAcct" type="{urn:iso:std:iso:20022:tech:xsd:pain.001.001.02}SimpleIdentificationInformation2"/>
  *         </choice>
  *       </sequence>
  *     </restriction>
@@ -45,20 +45,20 @@ import jakarta.xml.bind.annotation.XmlType;
     "upic",
     "prtryAcct"
 })
-@Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.1", date = "2023-01-07T21:58:34+01:00")
+@Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.1", date = "2023-01-08T20:53:23+01:00")
 public class AccountIdentification3Choice {
 
     @XmlElement(name = "IBAN")
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.1", date = "2023-01-07T21:58:34+01:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.1", date = "2023-01-08T20:53:23+01:00")
     protected String iban;
     @XmlElement(name = "BBAN")
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.1", date = "2023-01-07T21:58:34+01:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.1", date = "2023-01-08T20:53:23+01:00")
     protected String bban;
     @XmlElement(name = "UPIC")
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.1", date = "2023-01-07T21:58:34+01:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.1", date = "2023-01-08T20:53:23+01:00")
     protected String upic;
     @XmlElement(name = "PrtryAcct")
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.1", date = "2023-01-07T21:58:34+01:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.1", date = "2023-01-08T20:53:23+01:00")
     protected SimpleIdentificationInformation2 prtryAcct;
 
     /**
@@ -69,7 +69,7 @@ public class AccountIdentification3Choice {
      *     {@link String }
      *     
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.1", date = "2023-01-07T21:58:34+01:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.1", date = "2023-01-08T20:53:23+01:00")
     public String getIBAN() {
         return iban;
     }
@@ -82,7 +82,7 @@ public class AccountIdentification3Choice {
      *     {@link String }
      *     
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.1", date = "2023-01-07T21:58:34+01:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.1", date = "2023-01-08T20:53:23+01:00")
     public void setIBAN(String value) {
         this.iban = value;
     }
@@ -95,7 +95,7 @@ public class AccountIdentification3Choice {
      *     {@link String }
      *     
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.1", date = "2023-01-07T21:58:34+01:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.1", date = "2023-01-08T20:53:23+01:00")
     public String getBBAN() {
         return bban;
     }
@@ -108,7 +108,7 @@ public class AccountIdentification3Choice {
      *     {@link String }
      *     
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.1", date = "2023-01-07T21:58:34+01:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.1", date = "2023-01-08T20:53:23+01:00")
     public void setBBAN(String value) {
         this.bban = value;
     }
@@ -121,7 +121,7 @@ public class AccountIdentification3Choice {
      *     {@link String }
      *     
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.1", date = "2023-01-07T21:58:34+01:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.1", date = "2023-01-08T20:53:23+01:00")
     public String getUPIC() {
         return upic;
     }
@@ -134,7 +134,7 @@ public class AccountIdentification3Choice {
      *     {@link String }
      *     
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.1", date = "2023-01-07T21:58:34+01:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.1", date = "2023-01-08T20:53:23+01:00")
     public void setUPIC(String value) {
         this.upic = value;
     }
@@ -147,7 +147,7 @@ public class AccountIdentification3Choice {
      *     {@link SimpleIdentificationInformation2 }
      *     
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.1", date = "2023-01-07T21:58:34+01:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.1", date = "2023-01-08T20:53:23+01:00")
     public SimpleIdentificationInformation2 getPrtryAcct() {
         return prtryAcct;
     }
@@ -160,7 +160,7 @@ public class AccountIdentification3Choice {
      *     {@link SimpleIdentificationInformation2 }
      *     
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.1", date = "2023-01-07T21:58:34+01:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.1", date = "2023-01-08T20:53:23+01:00")
     public void setPrtryAcct(SimpleIdentificationInformation2 value) {
         this.prtryAcct = value;
     }

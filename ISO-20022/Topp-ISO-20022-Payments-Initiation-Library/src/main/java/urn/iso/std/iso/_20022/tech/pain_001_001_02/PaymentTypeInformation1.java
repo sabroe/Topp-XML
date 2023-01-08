@@ -25,13 +25,13 @@ import jakarta.xml.bind.annotation.XmlType;
  *   <complexContent>
  *     <restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
  *       <sequence>
- *         <element name="InstrPrty" type="{urn:iso:std:iso:20022:tech:xsd:qqq.pain.001.001.02.xxx.yyy}Priority2Code" minOccurs="0"/>
+ *         <element name="InstrPrty" type="{urn:iso:std:iso:20022:tech:xsd:pain.001.001.02}Priority2Code" minOccurs="0"/>
  *         <choice>
- *           <element name="SvcLvl" type="{urn:iso:std:iso:20022:tech:xsd:qqq.pain.001.001.02.xxx.yyy}ServiceLevel2Choice" minOccurs="0"/>
- *           <element name="ClrChanl" type="{urn:iso:std:iso:20022:tech:xsd:qqq.pain.001.001.02.xxx.yyy}ClearingChannel2Code" minOccurs="0"/>
+ *           <element name="SvcLvl" type="{urn:iso:std:iso:20022:tech:xsd:pain.001.001.02}ServiceLevel2Choice" minOccurs="0"/>
+ *           <element name="ClrChanl" type="{urn:iso:std:iso:20022:tech:xsd:pain.001.001.02}ClearingChannel2Code" minOccurs="0"/>
  *         </choice>
- *         <element name="LclInstrm" type="{urn:iso:std:iso:20022:tech:xsd:qqq.pain.001.001.02.xxx.yyy}LocalInstrument1Choice" minOccurs="0"/>
- *         <element name="CtgyPurp" type="{urn:iso:std:iso:20022:tech:xsd:qqq.pain.001.001.02.xxx.yyy}PaymentCategoryPurpose1Code" minOccurs="0"/>
+ *         <element name="LclInstrm" type="{urn:iso:std:iso:20022:tech:xsd:pain.001.001.02}LocalInstrument1Choice" minOccurs="0"/>
+ *         <element name="CtgyPurp" type="{urn:iso:std:iso:20022:tech:xsd:pain.001.001.02}PaymentCategoryPurpose1Code" minOccurs="0"/>
  *       </sequence>
  *     </restriction>
  *   </complexContent>
@@ -48,26 +48,26 @@ import jakarta.xml.bind.annotation.XmlType;
     "lclInstrm",
     "ctgyPurp"
 })
-@Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.1", date = "2023-01-07T21:58:34+01:00")
+@Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.1", date = "2023-01-08T20:53:23+01:00")
 public class PaymentTypeInformation1 {
 
     @XmlElement(name = "InstrPrty")
     @XmlSchemaType(name = "string")
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.1", date = "2023-01-07T21:58:34+01:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.1", date = "2023-01-08T20:53:23+01:00")
     protected Priority2Code instrPrty;
     @XmlElement(name = "SvcLvl")
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.1", date = "2023-01-07T21:58:34+01:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.1", date = "2023-01-08T20:53:23+01:00")
     protected ServiceLevel2Choice svcLvl;
     @XmlElement(name = "ClrChanl")
     @XmlSchemaType(name = "string")
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.1", date = "2023-01-07T21:58:34+01:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.1", date = "2023-01-08T20:53:23+01:00")
     protected ClearingChannel2Code clrChanl;
     @XmlElement(name = "LclInstrm")
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.1", date = "2023-01-07T21:58:34+01:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.1", date = "2023-01-08T20:53:23+01:00")
     protected LocalInstrument1Choice lclInstrm;
     @XmlElement(name = "CtgyPurp")
     @XmlSchemaType(name = "string")
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.1", date = "2023-01-07T21:58:34+01:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.1", date = "2023-01-08T20:53:23+01:00")
     protected PaymentCategoryPurpose1Code ctgyPurp;
 
     /**
@@ -78,7 +78,7 @@ public class PaymentTypeInformation1 {
      *     {@link Priority2Code }
      *     
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.1", date = "2023-01-07T21:58:34+01:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.1", date = "2023-01-08T20:53:23+01:00")
     public Priority2Code getInstrPrty() {
         return instrPrty;
     }
@@ -91,7 +91,7 @@ public class PaymentTypeInformation1 {
      *     {@link Priority2Code }
      *     
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.1", date = "2023-01-07T21:58:34+01:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.1", date = "2023-01-08T20:53:23+01:00")
     public void setInstrPrty(Priority2Code value) {
         this.instrPrty = value;
     }
@@ -104,7 +104,7 @@ public class PaymentTypeInformation1 {
      *     {@link ServiceLevel2Choice }
      *     
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.1", date = "2023-01-07T21:58:34+01:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.1", date = "2023-01-08T20:53:23+01:00")
     public ServiceLevel2Choice getSvcLvl() {
         return svcLvl;
     }
@@ -117,7 +117,7 @@ public class PaymentTypeInformation1 {
      *     {@link ServiceLevel2Choice }
      *     
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.1", date = "2023-01-07T21:58:34+01:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.1", date = "2023-01-08T20:53:23+01:00")
     public void setSvcLvl(ServiceLevel2Choice value) {
         this.svcLvl = value;
     }
@@ -130,7 +130,7 @@ public class PaymentTypeInformation1 {
      *     {@link ClearingChannel2Code }
      *     
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.1", date = "2023-01-07T21:58:34+01:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.1", date = "2023-01-08T20:53:23+01:00")
     public ClearingChannel2Code getClrChanl() {
         return clrChanl;
     }
@@ -143,7 +143,7 @@ public class PaymentTypeInformation1 {
      *     {@link ClearingChannel2Code }
      *     
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.1", date = "2023-01-07T21:58:34+01:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.1", date = "2023-01-08T20:53:23+01:00")
     public void setClrChanl(ClearingChannel2Code value) {
         this.clrChanl = value;
     }
@@ -156,7 +156,7 @@ public class PaymentTypeInformation1 {
      *     {@link LocalInstrument1Choice }
      *     
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.1", date = "2023-01-07T21:58:34+01:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.1", date = "2023-01-08T20:53:23+01:00")
     public LocalInstrument1Choice getLclInstrm() {
         return lclInstrm;
     }
@@ -169,7 +169,7 @@ public class PaymentTypeInformation1 {
      *     {@link LocalInstrument1Choice }
      *     
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.1", date = "2023-01-07T21:58:34+01:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.1", date = "2023-01-08T20:53:23+01:00")
     public void setLclInstrm(LocalInstrument1Choice value) {
         this.lclInstrm = value;
     }
@@ -182,7 +182,7 @@ public class PaymentTypeInformation1 {
      *     {@link PaymentCategoryPurpose1Code }
      *     
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.1", date = "2023-01-07T21:58:34+01:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.1", date = "2023-01-08T20:53:23+01:00")
     public PaymentCategoryPurpose1Code getCtgyPurp() {
         return ctgyPurp;
     }
@@ -195,7 +195,7 @@ public class PaymentTypeInformation1 {
      *     {@link PaymentCategoryPurpose1Code }
      *     
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.1", date = "2023-01-07T21:58:34+01:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.1", date = "2023-01-08T20:53:23+01:00")
     public void setCtgyPurp(PaymentCategoryPurpose1Code value) {
         this.ctgyPurp = value;
     }

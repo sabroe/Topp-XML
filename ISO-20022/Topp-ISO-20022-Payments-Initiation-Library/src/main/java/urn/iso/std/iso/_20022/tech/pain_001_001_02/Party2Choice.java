@@ -27,8 +27,8 @@ import jakarta.xml.bind.annotation.XmlType;
  *     <restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
  *       <sequence>
  *         <choice>
- *           <element name="OrgId" type="{urn:iso:std:iso:20022:tech:xsd:qqq.pain.001.001.02.xxx.yyy}OrganisationIdentification2"/>
- *           <element name="PrvtId" type="{urn:iso:std:iso:20022:tech:xsd:qqq.pain.001.001.02.xxx.yyy}PersonIdentification3" maxOccurs="4"/>
+ *           <element name="OrgId" type="{urn:iso:std:iso:20022:tech:xsd:pain.001.001.02}OrganisationIdentification2"/>
+ *           <element name="PrvtId" type="{urn:iso:std:iso:20022:tech:xsd:pain.001.001.02}PersonIdentification3" maxOccurs="4"/>
  *         </choice>
  *       </sequence>
  *     </restriction>
@@ -43,14 +43,14 @@ import jakarta.xml.bind.annotation.XmlType;
     "orgId",
     "prvtId"
 })
-@Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.1", date = "2023-01-07T21:58:34+01:00")
+@Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.1", date = "2023-01-08T20:53:23+01:00")
 public class Party2Choice {
 
     @XmlElement(name = "OrgId")
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.1", date = "2023-01-07T21:58:34+01:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.1", date = "2023-01-08T20:53:23+01:00")
     protected OrganisationIdentification2 orgId;
     @XmlElement(name = "PrvtId")
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.1", date = "2023-01-07T21:58:34+01:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.1", date = "2023-01-08T20:53:23+01:00")
     protected List<PersonIdentification3> prvtId;
 
     /**
@@ -61,7 +61,7 @@ public class Party2Choice {
      *     {@link OrganisationIdentification2 }
      *     
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.1", date = "2023-01-07T21:58:34+01:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.1", date = "2023-01-08T20:53:23+01:00")
     public OrganisationIdentification2 getOrgId() {
         return orgId;
     }
@@ -74,7 +74,7 @@ public class Party2Choice {
      *     {@link OrganisationIdentification2 }
      *     
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.1", date = "2023-01-07T21:58:34+01:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.1", date = "2023-01-08T20:53:23+01:00")
     public void setOrgId(OrganisationIdentification2 value) {
         this.orgId = value;
     }
@@ -103,7 +103,7 @@ public class Party2Choice {
      * @return
      *     The value of the prvtId property.
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.1", date = "2023-01-07T21:58:34+01:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.1", date = "2023-01-08T20:53:23+01:00")
     public List<PersonIdentification3> getPrvtId() {
         if (prvtId == null) {
             prvtId = new ArrayList<>();

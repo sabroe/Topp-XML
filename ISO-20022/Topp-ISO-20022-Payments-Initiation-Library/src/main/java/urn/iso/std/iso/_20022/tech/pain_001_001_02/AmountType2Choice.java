@@ -25,8 +25,8 @@ import jakarta.xml.bind.annotation.XmlType;
  *     <restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
  *       <sequence>
  *         <choice>
- *           <element name="InstdAmt" type="{urn:iso:std:iso:20022:tech:xsd:qqq.pain.001.001.02.xxx.yyy}CurrencyAndAmount"/>
- *           <element name="EqvtAmt" type="{urn:iso:std:iso:20022:tech:xsd:qqq.pain.001.001.02.xxx.yyy}EquivalentAmount"/>
+ *           <element name="InstdAmt" type="{urn:iso:std:iso:20022:tech:xsd:pain.001.001.02}CurrencyAndAmount"/>
+ *           <element name="EqvtAmt" type="{urn:iso:std:iso:20022:tech:xsd:pain.001.001.02}EquivalentAmount"/>
  *         </choice>
  *       </sequence>
  *     </restriction>
@@ -41,14 +41,14 @@ import jakarta.xml.bind.annotation.XmlType;
     "instdAmt",
     "eqvtAmt"
 })
-@Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.1", date = "2023-01-07T21:58:34+01:00")
+@Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.1", date = "2023-01-08T20:53:23+01:00")
 public class AmountType2Choice {
 
     @XmlElement(name = "InstdAmt")
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.1", date = "2023-01-07T21:58:34+01:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.1", date = "2023-01-08T20:53:23+01:00")
     protected CurrencyAndAmount instdAmt;
     @XmlElement(name = "EqvtAmt")
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.1", date = "2023-01-07T21:58:34+01:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.1", date = "2023-01-08T20:53:23+01:00")
     protected EquivalentAmount eqvtAmt;
 
     /**
@@ -59,7 +59,7 @@ public class AmountType2Choice {
      *     {@link CurrencyAndAmount }
      *     
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.1", date = "2023-01-07T21:58:34+01:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.1", date = "2023-01-08T20:53:23+01:00")
     public CurrencyAndAmount getInstdAmt() {
         return instdAmt;
     }
@@ -72,7 +72,7 @@ public class AmountType2Choice {
      *     {@link CurrencyAndAmount }
      *     
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.1", date = "2023-01-07T21:58:34+01:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.1", date = "2023-01-08T20:53:23+01:00")
     public void setInstdAmt(CurrencyAndAmount value) {
         this.instdAmt = value;
     }
@@ -85,7 +85,7 @@ public class AmountType2Choice {
      *     {@link EquivalentAmount }
      *     
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.1", date = "2023-01-07T21:58:34+01:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.1", date = "2023-01-08T20:53:23+01:00")
     public EquivalentAmount getEqvtAmt() {
         return eqvtAmt;
     }
@@ -98,7 +98,7 @@ public class AmountType2Choice {
      *     {@link EquivalentAmount }
      *     
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.1", date = "2023-01-07T21:58:34+01:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.1", date = "2023-01-08T20:53:23+01:00")
     public void setEqvtAmt(EquivalentAmount value) {
         this.eqvtAmt = value;
     }

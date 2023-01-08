@@ -24,8 +24,8 @@ import jakarta.xml.bind.annotation.XmlValue;
  * <pre>{@code
  * <complexType name="CurrencyAndAmount">
  *   <simpleContent>
- *     <extension base="<urn:iso:std:iso:20022:tech:xsd:qqq.pain.001.001.02.xxx.yyy>CurrencyAndAmount_SimpleType">
- *       <attribute name="Ccy" use="required" type="{urn:iso:std:iso:20022:tech:xsd:qqq.pain.001.001.02.xxx.yyy}CurrencyCode" />
+ *     <extension base="<urn:iso:std:iso:20022:tech:xsd:pain.001.001.02>CurrencyAndAmount_SimpleType">
+ *       <attribute name="Ccy" use="required" type="{urn:iso:std:iso:20022:tech:xsd:pain.001.001.02}CurrencyCode" />
  *     </extension>
  *   </simpleContent>
  * </complexType>
@@ -37,14 +37,14 @@ import jakarta.xml.bind.annotation.XmlValue;
 @XmlType(name = "CurrencyAndAmount", propOrder = {
     "value"
 })
-@Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.1", date = "2023-01-07T21:58:34+01:00")
+@Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.1", date = "2023-01-08T20:53:23+01:00")
 public class CurrencyAndAmount {
 
     @XmlValue
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.1", date = "2023-01-07T21:58:34+01:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.1", date = "2023-01-08T20:53:23+01:00")
     protected BigDecimal value;
     @XmlAttribute(name = "Ccy", required = true)
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.1", date = "2023-01-07T21:58:34+01:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.1", date = "2023-01-08T20:53:23+01:00")
     protected String ccy;
 
     /**
@@ -55,7 +55,7 @@ public class CurrencyAndAmount {
      *     {@link BigDecimal }
      *     
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.1", date = "2023-01-07T21:58:34+01:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.1", date = "2023-01-08T20:53:23+01:00")
     public BigDecimal getValue() {
         return value;
     }
@@ -68,7 +68,7 @@ public class CurrencyAndAmount {
      *     {@link BigDecimal }
      *     
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.1", date = "2023-01-07T21:58:34+01:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.1", date = "2023-01-08T20:53:23+01:00")
     public void setValue(BigDecimal value) {
         this.value = value;
     }
@@ -81,7 +81,7 @@ public class CurrencyAndAmount {
      *     {@link String }
      *     
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.1", date = "2023-01-07T21:58:34+01:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.1", date = "2023-01-08T20:53:23+01:00")
     public String getCcy() {
         return ccy;
     }
@@ -94,7 +94,7 @@ public class CurrencyAndAmount {
      *     {@link String }
      *     
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.1", date = "2023-01-07T21:58:34+01:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.1", date = "2023-01-08T20:53:23+01:00")
     public void setCcy(String value) {
         this.ccy = value;
     }

@@ -29,7 +29,7 @@ import jakarta.xml.bind.annotation.XmlType;
  */
 @XmlType(name = "ExchangeRateType1Code")
 @XmlEnum
-@Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.1", date = "2023-01-07T21:58:34+01:00")
+@Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.1", date = "2023-01-08T20:53:23+01:00")
 public enum ExchangeRateType1Code {
 
     SPOT,

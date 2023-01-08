@@ -24,8 +24,8 @@ import jakarta.xml.bind.annotation.XmlType;
  *   <complexContent>
  *     <restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
  *       <sequence>
- *         <element name="Amt" type="{urn:iso:std:iso:20022:tech:xsd:qqq.pain.001.001.02.xxx.yyy}CurrencyAndAmount"/>
- *         <element name="CcyOfTrf" type="{urn:iso:std:iso:20022:tech:xsd:qqq.pain.001.001.02.xxx.yyy}CurrencyCode"/>
+ *         <element name="Amt" type="{urn:iso:std:iso:20022:tech:xsd:pain.001.001.02}CurrencyAndAmount"/>
+ *         <element name="CcyOfTrf" type="{urn:iso:std:iso:20022:tech:xsd:pain.001.001.02}CurrencyCode"/>
  *       </sequence>
  *     </restriction>
  *   </complexContent>
@@ -39,14 +39,14 @@ import jakarta.xml.bind.annotation.XmlType;
     "amt",
     "ccyOfTrf"
 })
-@Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.1", date = "2023-01-07T21:58:34+01:00")
+@Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.1", date = "2023-01-08T20:53:23+01:00")
 public class EquivalentAmount {
 
     @XmlElement(name = "Amt", required = true)
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.1", date = "2023-01-07T21:58:34+01:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.1", date = "2023-01-08T20:53:23+01:00")
     protected CurrencyAndAmount amt;
     @XmlElement(name = "CcyOfTrf", required = true)
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.1", date = "2023-01-07T21:58:34+01:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.1", date = "2023-01-08T20:53:23+01:00")
     protected String ccyOfTrf;
 
     /**
@@ -57,7 +57,7 @@ public class EquivalentAmount {
      *     {@link CurrencyAndAmount }
      *     
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.1", date = "2023-01-07T21:58:34+01:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.1", date = "2023-01-08T20:53:23+01:00")
     public CurrencyAndAmount getAmt() {
         return amt;
     }
@@ -70,7 +70,7 @@ public class EquivalentAmount {
      *     {@link CurrencyAndAmount }
      *     
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.1", date = "2023-01-07T21:58:34+01:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.1", date = "2023-01-08T20:53:23+01:00")
     public void setAmt(CurrencyAndAmount value) {
         this.amt = value;
     }
@@ -83,7 +83,7 @@ public class EquivalentAmount {
      *     {@link String }
      *     
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.1", date = "2023-01-07T21:58:34+01:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.1", date = "2023-01-08T20:53:23+01:00")
     public String getCcyOfTrf() {
         return ccyOfTrf;
     }
@@ -96,7 +96,7 @@ public class EquivalentAmount {
      *     {@link String }
      *     
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.1", date = "2023-01-07T21:58:34+01:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.1", date = "2023-01-08T20:53:23+01:00")
     public void setCcyOfTrf(String value) {
         this.ccyOfTrf = value;
     }

@@ -28,20 +28,20 @@ import jakarta.xml.bind.annotation.XmlType;
  *   <complexContent>
  *     <restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
  *       <sequence>
- *         <element name="PmtInfId" type="{urn:iso:std:iso:20022:tech:xsd:qqq.pain.001.001.02.xxx.yyy}Max35Text" minOccurs="0"/>
- *         <element name="PmtMtd" type="{urn:iso:std:iso:20022:tech:xsd:qqq.pain.001.001.02.xxx.yyy}PaymentMethod3Code"/>
- *         <element name="PmtTpInf" type="{urn:iso:std:iso:20022:tech:xsd:qqq.pain.001.001.02.xxx.yyy}PaymentTypeInformation1" minOccurs="0"/>
- *         <element name="ReqdExctnDt" type="{urn:iso:std:iso:20022:tech:xsd:qqq.pain.001.001.02.xxx.yyy}ISODate"/>
- *         <element name="PoolgAdjstmntDt" type="{urn:iso:std:iso:20022:tech:xsd:qqq.pain.001.001.02.xxx.yyy}ISODate" minOccurs="0"/>
- *         <element name="Dbtr" type="{urn:iso:std:iso:20022:tech:xsd:qqq.pain.001.001.02.xxx.yyy}PartyIdentification8"/>
- *         <element name="DbtrAcct" type="{urn:iso:std:iso:20022:tech:xsd:qqq.pain.001.001.02.xxx.yyy}CashAccount7"/>
- *         <element name="DbtrAgt" type="{urn:iso:std:iso:20022:tech:xsd:qqq.pain.001.001.02.xxx.yyy}BranchAndFinancialInstitutionIdentification3"/>
- *         <element name="DbtrAgtAcct" type="{urn:iso:std:iso:20022:tech:xsd:qqq.pain.001.001.02.xxx.yyy}CashAccount7" minOccurs="0"/>
- *         <element name="UltmtDbtr" type="{urn:iso:std:iso:20022:tech:xsd:qqq.pain.001.001.02.xxx.yyy}PartyIdentification8" minOccurs="0"/>
- *         <element name="ChrgBr" type="{urn:iso:std:iso:20022:tech:xsd:qqq.pain.001.001.02.xxx.yyy}ChargeBearerType1Code" minOccurs="0"/>
- *         <element name="ChrgsAcct" type="{urn:iso:std:iso:20022:tech:xsd:qqq.pain.001.001.02.xxx.yyy}CashAccount7" minOccurs="0"/>
- *         <element name="ChrgsAcctAgt" type="{urn:iso:std:iso:20022:tech:xsd:qqq.pain.001.001.02.xxx.yyy}BranchAndFinancialInstitutionIdentification3" minOccurs="0"/>
- *         <element name="CdtTrfTxInf" type="{urn:iso:std:iso:20022:tech:xsd:qqq.pain.001.001.02.xxx.yyy}CreditTransferTransactionInformation1" maxOccurs="unbounded"/>
+ *         <element name="PmtInfId" type="{urn:iso:std:iso:20022:tech:xsd:pain.001.001.02}Max35Text" minOccurs="0"/>
+ *         <element name="PmtMtd" type="{urn:iso:std:iso:20022:tech:xsd:pain.001.001.02}PaymentMethod3Code"/>
+ *         <element name="PmtTpInf" type="{urn:iso:std:iso:20022:tech:xsd:pain.001.001.02}PaymentTypeInformation1" minOccurs="0"/>
+ *         <element name="ReqdExctnDt" type="{urn:iso:std:iso:20022:tech:xsd:pain.001.001.02}ISODate"/>
+ *         <element name="PoolgAdjstmntDt" type="{urn:iso:std:iso:20022:tech:xsd:pain.001.001.02}ISODate" minOccurs="0"/>
+ *         <element name="Dbtr" type="{urn:iso:std:iso:20022:tech:xsd:pain.001.001.02}PartyIdentification8"/>
+ *         <element name="DbtrAcct" type="{urn:iso:std:iso:20022:tech:xsd:pain.001.001.02}CashAccount7"/>
+ *         <element name="DbtrAgt" type="{urn:iso:std:iso:20022:tech:xsd:pain.001.001.02}BranchAndFinancialInstitutionIdentification3"/>
+ *         <element name="DbtrAgtAcct" type="{urn:iso:std:iso:20022:tech:xsd:pain.001.001.02}CashAccount7" minOccurs="0"/>
+ *         <element name="UltmtDbtr" type="{urn:iso:std:iso:20022:tech:xsd:pain.001.001.02}PartyIdentification8" minOccurs="0"/>
+ *         <element name="ChrgBr" type="{urn:iso:std:iso:20022:tech:xsd:pain.001.001.02}ChargeBearerType1Code" minOccurs="0"/>
+ *         <element name="ChrgsAcct" type="{urn:iso:std:iso:20022:tech:xsd:pain.001.001.02}CashAccount7" minOccurs="0"/>
+ *         <element name="ChrgsAcctAgt" type="{urn:iso:std:iso:20022:tech:xsd:pain.001.001.02}BranchAndFinancialInstitutionIdentification3" minOccurs="0"/>
+ *         <element name="CdtTrfTxInf" type="{urn:iso:std:iso:20022:tech:xsd:pain.001.001.02}CreditTransferTransactionInformation1" maxOccurs="unbounded"/>
  *       </sequence>
  *     </restriction>
  *   </complexContent>
@@ -67,54 +67,54 @@ import jakarta.xml.bind.annotation.XmlType;
     "chrgsAcctAgt",
     "cdtTrfTxInf"
 })
-@Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.1", date = "2023-01-07T21:58:34+01:00")
+@Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.1", date = "2023-01-08T20:53:23+01:00")
 public class PaymentInstructionInformation1 {
 
     @XmlElement(name = "PmtInfId")
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.1", date = "2023-01-07T21:58:34+01:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.1", date = "2023-01-08T20:53:23+01:00")
     protected String pmtInfId;
     @XmlElement(name = "PmtMtd", required = true)
     @XmlSchemaType(name = "string")
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.1", date = "2023-01-07T21:58:34+01:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.1", date = "2023-01-08T20:53:23+01:00")
     protected PaymentMethod3Code pmtMtd;
     @XmlElement(name = "PmtTpInf")
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.1", date = "2023-01-07T21:58:34+01:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.1", date = "2023-01-08T20:53:23+01:00")
     protected PaymentTypeInformation1 pmtTpInf;
     @XmlElement(name = "ReqdExctnDt", required = true)
     @XmlSchemaType(name = "date")
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.1", date = "2023-01-07T21:58:34+01:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.1", date = "2023-01-08T20:53:23+01:00")
     protected XMLGregorianCalendar reqdExctnDt;
     @XmlElement(name = "PoolgAdjstmntDt")
     @XmlSchemaType(name = "date")
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.1", date = "2023-01-07T21:58:34+01:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.1", date = "2023-01-08T20:53:23+01:00")
     protected XMLGregorianCalendar poolgAdjstmntDt;
     @XmlElement(name = "Dbtr", required = true)
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.1", date = "2023-01-07T21:58:34+01:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.1", date = "2023-01-08T20:53:23+01:00")
     protected PartyIdentification8 dbtr;
     @XmlElement(name = "DbtrAcct", required = true)
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.1", date = "2023-01-07T21:58:34+01:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.1", date = "2023-01-08T20:53:23+01:00")
     protected CashAccount7 dbtrAcct;
     @XmlElement(name = "DbtrAgt", required = true)
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.1", date = "2023-01-07T21:58:34+01:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.1", date = "2023-01-08T20:53:23+01:00")
     protected BranchAndFinancialInstitutionIdentification3 dbtrAgt;
     @XmlElement(name = "DbtrAgtAcct")
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.1", date = "2023-01-07T21:58:34+01:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.1", date = "2023-01-08T20:53:23+01:00")
     protected CashAccount7 dbtrAgtAcct;
     @XmlElement(name = "UltmtDbtr")
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.1", date = "2023-01-07T21:58:34+01:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.1", date = "2023-01-08T20:53:23+01:00")
     protected PartyIdentification8 ultmtDbtr;
     @XmlElement(name = "ChrgBr")
     @XmlSchemaType(name = "string")
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.1", date = "2023-01-07T21:58:34+01:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.1", date = "2023-01-08T20:53:23+01:00")
     protected ChargeBearerType1Code chrgBr;
     @XmlElement(name = "ChrgsAcct")
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.1", date = "2023-01-07T21:58:34+01:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.1", date = "2023-01-08T20:53:23+01:00")
     protected CashAccount7 chrgsAcct;
     @XmlElement(name = "ChrgsAcctAgt")
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.1", date = "2023-01-07T21:58:34+01:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.1", date = "2023-01-08T20:53:23+01:00")
     protected BranchAndFinancialInstitutionIdentification3 chrgsAcctAgt;
     @XmlElement(name = "CdtTrfTxInf", required = true)
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.1", date = "2023-01-07T21:58:34+01:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.1", date = "2023-01-08T20:53:23+01:00")
     protected List<CreditTransferTransactionInformation1> cdtTrfTxInf;
 
     /**
@@ -125,7 +125,7 @@ public class PaymentInstructionInformation1 {
      *     {@link String }
      *     
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.1", date = "2023-01-07T21:58:34+01:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.1", date = "2023-01-08T20:53:23+01:00")
     public String getPmtInfId() {
         return pmtInfId;
     }
@@ -138,7 +138,7 @@ public class PaymentInstructionInformation1 {
      *     {@link String }
      *     
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.1", date = "2023-01-07T21:58:34+01:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.1", date = "2023-01-08T20:53:23+01:00")
     public void setPmtInfId(String value) {
         this.pmtInfId = value;
     }
@@ -151,7 +151,7 @@ public class PaymentInstructionInformation1 {
      *     {@link PaymentMethod3Code }
      *     
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.1", date = "2023-01-07T21:58:34+01:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.1", date = "2023-01-08T20:53:23+01:00")
     public PaymentMethod3Code getPmtMtd() {
         return pmtMtd;
     }
@@ -164,7 +164,7 @@ public class PaymentInstructionInformation1 {
      *     {@link PaymentMethod3Code }
      *     
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.1", date = "2023-01-07T21:58:34+01:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.1", date = "2023-01-08T20:53:23+01:00")
     public void setPmtMtd(PaymentMethod3Code value) {
         this.pmtMtd = value;
     }
@@ -177,7 +177,7 @@ public class PaymentInstructionInformation1 {
      *     {@link PaymentTypeInformation1 }
      *     
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.1", date = "2023-01-07T21:58:34+01:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.1", date = "2023-01-08T20:53:23+01:00")
     public PaymentTypeInformation1 getPmtTpInf() {
         return pmtTpInf;
     }
@@ -190,7 +190,7 @@ public class PaymentInstructionInformation1 {
      *     {@link PaymentTypeInformation1 }
      *     
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.1", date = "2023-01-07T21:58:34+01:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.1", date = "2023-01-08T20:53:23+01:00")
     public void setPmtTpInf(PaymentTypeInformation1 value) {
         this.pmtTpInf = value;
     }
@@ -203,7 +203,7 @@ public class PaymentInstructionInformation1 {
      *     {@link XMLGregorianCalendar }
      *     
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.1", date = "2023-01-07T21:58:34+01:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.1", date = "2023-01-08T20:53:23+01:00")
     public XMLGregorianCalendar getReqdExctnDt() {
         return reqdExctnDt;
     }
@@ -216,7 +216,7 @@ public class PaymentInstructionInformation1 {
      *     {@link XMLGregorianCalendar }
      *     
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.1", date = "2023-01-07T21:58:34+01:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.1", date = "2023-01-08T20:53:23+01:00")
     public void setReqdExctnDt(XMLGregorianCalendar value) {
         this.reqdExctnDt = value;
     }
@@ -229,7 +229,7 @@ public class PaymentInstructionInformation1 {
      *     {@link XMLGregorianCalendar }
      *     
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.1", date = "2023-01-07T21:58:34+01:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.1", date = "2023-01-08T20:53:23+01:00")
     public XMLGregorianCalendar getPoolgAdjstmntDt() {
         return poolgAdjstmntDt;
     }
@@ -242,7 +242,7 @@ public class PaymentInstructionInformation1 {
      *     {@link XMLGregorianCalendar }
      *     
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.1", date = "2023-01-07T21:58:34+01:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.1", date = "2023-01-08T20:53:23+01:00")
     public void setPoolgAdjstmntDt(XMLGregorianCalendar value) {
         this.poolgAdjstmntDt = value;
     }
@@ -255,7 +255,7 @@ public class PaymentInstructionInformation1 {
      *     {@link PartyIdentification8 }
      *     
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.1", date = "2023-01-07T21:58:34+01:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.1", date = "2023-01-08T20:53:23+01:00")
     public PartyIdentification8 getDbtr() {
         return dbtr;
     }
@@ -268,7 +268,7 @@ public class PaymentInstructionInformation1 {
      *     {@link PartyIdentification8 }
      *     
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.1", date = "2023-01-07T21:58:34+01:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.1", date = "2023-01-08T20:53:23+01:00")
     public void setDbtr(PartyIdentification8 value) {
         this.dbtr = value;
     }
@@ -281,7 +281,7 @@ public class PaymentInstructionInformation1 {
      *     {@link CashAccount7 }
      *     
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.1", date = "2023-01-07T21:58:34+01:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.1", date = "2023-01-08T20:53:23+01:00")
     public CashAccount7 getDbtrAcct() {
         return dbtrAcct;
     }
@@ -294,7 +294,7 @@ public class PaymentInstructionInformation1 {
      *     {@link CashAccount7 }
      *     
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.1", date = "2023-01-07T21:58:34+01:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.1", date = "2023-01-08T20:53:23+01:00")
     public void setDbtrAcct(CashAccount7 value) {
         this.dbtrAcct = value;
     }
@@ -307,7 +307,7 @@ public class PaymentInstructionInformation1 {
      *     {@link BranchAndFinancialInstitutionIdentification3 }
      *     
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.1", date = "2023-01-07T21:58:34+01:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.1", date = "2023-01-08T20:53:23+01:00")
     public BranchAndFinancialInstitutionIdentification3 getDbtrAgt() {
         return dbtrAgt;
     }
@@ -320,7 +320,7 @@ public class PaymentInstructionInformation1 {
      *     {@link BranchAndFinancialInstitutionIdentification3 }
      *     
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.1", date = "2023-01-07T21:58:34+01:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.1", date = "2023-01-08T20:53:23+01:00")
     public void setDbtrAgt(BranchAndFinancialInstitutionIdentification3 value) {
         this.dbtrAgt = value;
     }
@@ -333,7 +333,7 @@ public class PaymentInstructionInformation1 {
      *     {@link CashAccount7 }
      *     
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.1", date = "2023-01-07T21:58:34+01:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.1", date = "2023-01-08T20:53:23+01:00")
     public CashAccount7 getDbtrAgtAcct() {
         return dbtrAgtAcct;
     }
@@ -346,7 +346,7 @@ public class PaymentInstructionInformation1 {
      *     {@link CashAccount7 }
      *     
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.1", date = "2023-01-07T21:58:34+01:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.1", date = "2023-01-08T20:53:23+01:00")
     public void setDbtrAgtAcct(CashAccount7 value) {
         this.dbtrAgtAcct = value;
     }
@@ -359,7 +359,7 @@ public class PaymentInstructionInformation1 {
      *     {@link PartyIdentification8 }
      *     
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.1", date = "2023-01-07T21:58:34+01:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.1", date = "2023-01-08T20:53:23+01:00")
     public PartyIdentification8 getUltmtDbtr() {
         return ultmtDbtr;
     }
@@ -372,7 +372,7 @@ public class PaymentInstructionInformation1 {
      *     {@link PartyIdentification8 }
      *     
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.1", date = "2023-01-07T21:58:34+01:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.1", date = "2023-01-08T20:53:23+01:00")
     public void setUltmtDbtr(PartyIdentification8 value) {
         this.ultmtDbtr = value;
     }
@@ -385,7 +385,7 @@ public class PaymentInstructionInformation1 {
      *     {@link ChargeBearerType1Code }
      *     
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.1", date = "2023-01-07T21:58:34+01:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.1", date = "2023-01-08T20:53:23+01:00")
     public ChargeBearerType1Code getChrgBr() {
         return chrgBr;
     }
@@ -398,7 +398,7 @@ public class PaymentInstructionInformation1 {
      *     {@link ChargeBearerType1Code }
      *     
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.1", date = "2023-01-07T21:58:34+01:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.1", date = "2023-01-08T20:53:23+01:00")
     public void setChrgBr(ChargeBearerType1Code value) {
         this.chrgBr = value;
     }
@@ -411,7 +411,7 @@ public class PaymentInstructionInformation1 {
      *     {@link CashAccount7 }
      *     
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.1", date = "2023-01-07T21:58:34+01:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.1", date = "2023-01-08T20:53:23+01:00")
     public CashAccount7 getChrgsAcct() {
         return chrgsAcct;
     }
@@ -424,7 +424,7 @@ public class PaymentInstructionInformation1 {
      *     {@link CashAccount7 }
      *     
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.1", date = "2023-01-07T21:58:34+01:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.1", date = "2023-01-08T20:53:23+01:00")
     public void setChrgsAcct(CashAccount7 value) {
         this.chrgsAcct = value;
     }
@@ -437,7 +437,7 @@ public class PaymentInstructionInformation1 {
      *     {@link BranchAndFinancialInstitutionIdentification3 }
      *     
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.1", date = "2023-01-07T21:58:34+01:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.1", date = "2023-01-08T20:53:23+01:00")
     public BranchAndFinancialInstitutionIdentification3 getChrgsAcctAgt() {
         return chrgsAcctAgt;
     }
@@ -450,7 +450,7 @@ public class PaymentInstructionInformation1 {
      *     {@link BranchAndFinancialInstitutionIdentification3 }
      *     
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.1", date = "2023-01-07T21:58:34+01:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.1", date = "2023-01-08T20:53:23+01:00")
     public void setChrgsAcctAgt(BranchAndFinancialInstitutionIdentification3 value) {
         this.chrgsAcctAgt = value;
     }
@@ -479,7 +479,7 @@ public class PaymentInstructionInformation1 {
      * @return
      *     The value of the cdtTrfTxInf property.
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.1", date = "2023-01-07T21:58:34+01:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.1", date = "2023-01-08T20:53:23+01:00")
     public List<CreditTransferTransactionInformation1> getCdtTrfTxInf() {
         if (cdtTrfTxInf == null) {
             cdtTrfTxInf = new ArrayList<>();

@@ -25,11 +25,11 @@ import jakarta.xml.bind.annotation.XmlType;
  *     <restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
  *       <sequence>
  *         <choice>
- *           <element name="BIC" type="{urn:iso:std:iso:20022:tech:xsd:qqq.pain.001.001.02.xxx.yyy}BICIdentifier"/>
- *           <element name="ClrSysMmbId" type="{urn:iso:std:iso:20022:tech:xsd:qqq.pain.001.001.02.xxx.yyy}ClearingSystemMemberIdentification3Choice"/>
- *           <element name="NmAndAdr" type="{urn:iso:std:iso:20022:tech:xsd:qqq.pain.001.001.02.xxx.yyy}NameAndAddress7"/>
- *           <element name="PrtryId" type="{urn:iso:std:iso:20022:tech:xsd:qqq.pain.001.001.02.xxx.yyy}GenericIdentification3"/>
- *           <element name="CmbndId" type="{urn:iso:std:iso:20022:tech:xsd:qqq.pain.001.001.02.xxx.yyy}FinancialInstitutionIdentification3"/>
+ *           <element name="BIC" type="{urn:iso:std:iso:20022:tech:xsd:pain.001.001.02}BICIdentifier"/>
+ *           <element name="ClrSysMmbId" type="{urn:iso:std:iso:20022:tech:xsd:pain.001.001.02}ClearingSystemMemberIdentification3Choice"/>
+ *           <element name="NmAndAdr" type="{urn:iso:std:iso:20022:tech:xsd:pain.001.001.02}NameAndAddress7"/>
+ *           <element name="PrtryId" type="{urn:iso:std:iso:20022:tech:xsd:pain.001.001.02}GenericIdentification3"/>
+ *           <element name="CmbndId" type="{urn:iso:std:iso:20022:tech:xsd:pain.001.001.02}FinancialInstitutionIdentification3"/>
  *         </choice>
  *       </sequence>
  *     </restriction>
@@ -47,23 +47,23 @@ import jakarta.xml.bind.annotation.XmlType;
     "prtryId",
     "cmbndId"
 })
-@Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.1", date = "2023-01-07T21:58:34+01:00")
+@Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.1", date = "2023-01-08T20:53:23+01:00")
 public class FinancialInstitutionIdentification5Choice {
 
     @XmlElement(name = "BIC")
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.1", date = "2023-01-07T21:58:34+01:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.1", date = "2023-01-08T20:53:23+01:00")
     protected String bic;
     @XmlElement(name = "ClrSysMmbId")
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.1", date = "2023-01-07T21:58:34+01:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.1", date = "2023-01-08T20:53:23+01:00")
     protected ClearingSystemMemberIdentification3Choice clrSysMmbId;
     @XmlElement(name = "NmAndAdr")
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.1", date = "2023-01-07T21:58:34+01:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.1", date = "2023-01-08T20:53:23+01:00")
     protected NameAndAddress7 nmAndAdr;
     @XmlElement(name = "PrtryId")
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.1", date = "2023-01-07T21:58:34+01:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.1", date = "2023-01-08T20:53:23+01:00")
     protected GenericIdentification3 prtryId;
     @XmlElement(name = "CmbndId")
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.1", date = "2023-01-07T21:58:34+01:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.1", date = "2023-01-08T20:53:23+01:00")
     protected FinancialInstitutionIdentification3 cmbndId;
 
     /**
@@ -74,7 +74,7 @@ public class FinancialInstitutionIdentification5Choice {
      *     {@link String }
      *     
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.1", date = "2023-01-07T21:58:34+01:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.1", date = "2023-01-08T20:53:23+01:00")
     public String getBIC() {
         return bic;
     }
@@ -87,7 +87,7 @@ public class FinancialInstitutionIdentification5Choice {
      *     {@link String }
      *     
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.1", date = "2023-01-07T21:58:34+01:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.1", date = "2023-01-08T20:53:23+01:00")
     public void setBIC(String value) {
         this.bic = value;
     }
@@ -100,7 +100,7 @@ public class FinancialInstitutionIdentification5Choice {
      *     {@link ClearingSystemMemberIdentification3Choice }
      *     
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.1", date = "2023-01-07T21:58:34+01:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.1", date = "2023-01-08T20:53:23+01:00")
     public ClearingSystemMemberIdentification3Choice getClrSysMmbId() {
         return clrSysMmbId;
     }
@@ -113,7 +113,7 @@ public class FinancialInstitutionIdentification5Choice {
      *     {@link ClearingSystemMemberIdentification3Choice }
      *     
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.1", date = "2023-01-07T21:58:34+01:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.1", date = "2023-01-08T20:53:23+01:00")
     public void setClrSysMmbId(ClearingSystemMemberIdentification3Choice value) {
         this.clrSysMmbId = value;
     }
@@ -126,7 +126,7 @@ public class FinancialInstitutionIdentification5Choice {
      *     {@link NameAndAddress7 }
      *     
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.1", date = "2023-01-07T21:58:34+01:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.1", date = "2023-01-08T20:53:23+01:00")
     public NameAndAddress7 getNmAndAdr() {
         return nmAndAdr;
     }
@@ -139,7 +139,7 @@ public class FinancialInstitutionIdentification5Choice {
      *     {@link NameAndAddress7 }
      *     
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.1", date = "2023-01-07T21:58:34+01:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.1", date = "2023-01-08T20:53:23+01:00")
     public void setNmAndAdr(NameAndAddress7 value) {
         this.nmAndAdr = value;
     }
@@ -152,7 +152,7 @@ public class FinancialInstitutionIdentification5Choice {
      *     {@link GenericIdentification3 }
      *     
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.1", date = "2023-01-07T21:58:34+01:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.1", date = "2023-01-08T20:53:23+01:00")
     public GenericIdentification3 getPrtryId() {
         return prtryId;
     }
@@ -165,7 +165,7 @@ public class FinancialInstitutionIdentification5Choice {
      *     {@link GenericIdentification3 }
      *     
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.1", date = "2023-01-07T21:58:34+01:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.1", date = "2023-01-08T20:53:23+01:00")
     public void setPrtryId(GenericIdentification3 value) {
         this.prtryId = value;
     }
@@ -178,7 +178,7 @@ public class FinancialInstitutionIdentification5Choice {
      *     {@link FinancialInstitutionIdentification3 }
      *     
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.1", date = "2023-01-07T21:58:34+01:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.1", date = "2023-01-08T20:53:23+01:00")
     public FinancialInstitutionIdentification3 getCmbndId() {
         return cmbndId;
     }
@@ -191,7 +191,7 @@ public class FinancialInstitutionIdentification5Choice {
      *     {@link FinancialInstitutionIdentification3 }
      *     
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.1", date = "2023-01-07T21:58:34+01:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.1", date = "2023-01-08T20:53:23+01:00")
     public void setCmbndId(FinancialInstitutionIdentification3 value) {
         this.cmbndId = value;
     }

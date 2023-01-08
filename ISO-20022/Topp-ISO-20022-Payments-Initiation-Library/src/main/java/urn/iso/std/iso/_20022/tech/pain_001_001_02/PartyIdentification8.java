@@ -24,10 +24,10 @@ import jakarta.xml.bind.annotation.XmlType;
  *   <complexContent>
  *     <restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
  *       <sequence>
- *         <element name="Nm" type="{urn:iso:std:iso:20022:tech:xsd:qqq.pain.001.001.02.xxx.yyy}Max70Text" minOccurs="0"/>
- *         <element name="PstlAdr" type="{urn:iso:std:iso:20022:tech:xsd:qqq.pain.001.001.02.xxx.yyy}PostalAddress1" minOccurs="0"/>
- *         <element name="Id" type="{urn:iso:std:iso:20022:tech:xsd:qqq.pain.001.001.02.xxx.yyy}Party2Choice" minOccurs="0"/>
- *         <element name="CtryOfRes" type="{urn:iso:std:iso:20022:tech:xsd:qqq.pain.001.001.02.xxx.yyy}CountryCode" minOccurs="0"/>
+ *         <element name="Nm" type="{urn:iso:std:iso:20022:tech:xsd:pain.001.001.02}Max70Text" minOccurs="0"/>
+ *         <element name="PstlAdr" type="{urn:iso:std:iso:20022:tech:xsd:pain.001.001.02}PostalAddress1" minOccurs="0"/>
+ *         <element name="Id" type="{urn:iso:std:iso:20022:tech:xsd:pain.001.001.02}Party2Choice" minOccurs="0"/>
+ *         <element name="CtryOfRes" type="{urn:iso:std:iso:20022:tech:xsd:pain.001.001.02}CountryCode" minOccurs="0"/>
  *       </sequence>
  *     </restriction>
  *   </complexContent>
@@ -43,20 +43,20 @@ import jakarta.xml.bind.annotation.XmlType;
     "id",
     "ctryOfRes"
 })
-@Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.1", date = "2023-01-07T21:58:34+01:00")
+@Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.1", date = "2023-01-08T20:53:23+01:00")
 public class PartyIdentification8 {
 
     @XmlElement(name = "Nm")
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.1", date = "2023-01-07T21:58:34+01:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.1", date = "2023-01-08T20:53:23+01:00")
     protected String nm;
     @XmlElement(name = "PstlAdr")
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.1", date = "2023-01-07T21:58:34+01:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.1", date = "2023-01-08T20:53:23+01:00")
     protected PostalAddress1 pstlAdr;
     @XmlElement(name = "Id")
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.1", date = "2023-01-07T21:58:34+01:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.1", date = "2023-01-08T20:53:23+01:00")
     protected Party2Choice id;
     @XmlElement(name = "CtryOfRes")
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.1", date = "2023-01-07T21:58:34+01:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.1", date = "2023-01-08T20:53:23+01:00")
     protected String ctryOfRes;
 
     /**
@@ -67,7 +67,7 @@ public class PartyIdentification8 {
      *     {@link String }
      *     
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.1", date = "2023-01-07T21:58:34+01:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.1", date = "2023-01-08T20:53:23+01:00")
     public String getNm() {
         return nm;
     }
@@ -80,7 +80,7 @@ public class PartyIdentification8 {
      *     {@link String }
      *     
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.1", date = "2023-01-07T21:58:34+01:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.1", date = "2023-01-08T20:53:23+01:00")
     public void setNm(String value) {
         this.nm = value;
     }
@@ -93,7 +93,7 @@ public class PartyIdentification8 {
      *     {@link PostalAddress1 }
      *     
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.1", date = "2023-01-07T21:58:34+01:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.1", date = "2023-01-08T20:53:23+01:00")
     public PostalAddress1 getPstlAdr() {
         return pstlAdr;
     }
@@ -106,7 +106,7 @@ public class PartyIdentification8 {
      *     {@link PostalAddress1 }
      *     
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.1", date = "2023-01-07T21:58:34+01:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.1", date = "2023-01-08T20:53:23+01:00")
     public void setPstlAdr(PostalAddress1 value) {
         this.pstlAdr = value;
     }
@@ -119,7 +119,7 @@ public class PartyIdentification8 {
      *     {@link Party2Choice }
      *     
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.1", date = "2023-01-07T21:58:34+01:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.1", date = "2023-01-08T20:53:23+01:00")
     public Party2Choice getId() {
         return id;
     }
@@ -132,7 +132,7 @@ public class PartyIdentification8 {
      *     {@link Party2Choice }
      *     
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.1", date = "2023-01-07T21:58:34+01:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.1", date = "2023-01-08T20:53:23+01:00")
     public void setId(Party2Choice value) {
         this.id = value;
     }
@@ -145,7 +145,7 @@ public class PartyIdentification8 {
      *     {@link String }
      *     
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.1", date = "2023-01-07T21:58:34+01:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.1", date = "2023-01-08T20:53:23+01:00")
     public String getCtryOfRes() {
         return ctryOfRes;
     }
@@ -158,7 +158,7 @@ public class PartyIdentification8 {
      *     {@link String }
      *     
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.1", date = "2023-01-07T21:58:34+01:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.1", date = "2023-01-08T20:53:23+01:00")
     public void setCtryOfRes(String value) {
         this.ctryOfRes = value;
     }

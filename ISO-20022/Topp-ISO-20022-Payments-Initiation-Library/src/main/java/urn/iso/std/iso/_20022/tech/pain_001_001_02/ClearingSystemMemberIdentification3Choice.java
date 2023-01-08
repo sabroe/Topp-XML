@@ -25,8 +25,8 @@ import jakarta.xml.bind.annotation.XmlType;
  *     <restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
  *       <sequence>
  *         <choice>
- *           <element name="Id" type="{urn:iso:std:iso:20022:tech:xsd:qqq.pain.001.001.02.xxx.yyy}ExternalClearingSystemMemberCode"/>
- *           <element name="Prtry" type="{urn:iso:std:iso:20022:tech:xsd:qqq.pain.001.001.02.xxx.yyy}Max35Text"/>
+ *           <element name="Id" type="{urn:iso:std:iso:20022:tech:xsd:pain.001.001.02}ExternalClearingSystemMemberCode"/>
+ *           <element name="Prtry" type="{urn:iso:std:iso:20022:tech:xsd:pain.001.001.02}Max35Text"/>
  *         </choice>
  *       </sequence>
  *     </restriction>
@@ -41,14 +41,14 @@ import jakarta.xml.bind.annotation.XmlType;
     "id",
     "prtry"
 })
-@Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.1", date = "2023-01-07T21:58:34+01:00")
+@Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.1", date = "2023-01-08T20:53:23+01:00")
 public class ClearingSystemMemberIdentification3Choice {
 
     @XmlElement(name = "Id")
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.1", date = "2023-01-07T21:58:34+01:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.1", date = "2023-01-08T20:53:23+01:00")
     protected String id;
     @XmlElement(name = "Prtry")
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.1", date = "2023-01-07T21:58:34+01:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.1", date = "2023-01-08T20:53:23+01:00")
     protected String prtry;
 
     /**
@@ -59,7 +59,7 @@ public class ClearingSystemMemberIdentification3Choice {
      *     {@link String }
      *     
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.1", date = "2023-01-07T21:58:34+01:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.1", date = "2023-01-08T20:53:23+01:00")
     public String getId() {
         return id;
     }
@@ -72,7 +72,7 @@ public class ClearingSystemMemberIdentification3Choice {
      *     {@link String }
      *     
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.1", date = "2023-01-07T21:58:34+01:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.1", date = "2023-01-08T20:53:23+01:00")
     public void setId(String value) {
         this.id = value;
     }
@@ -85,7 +85,7 @@ public class ClearingSystemMemberIdentification3Choice {
      *     {@link String }
      *     
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.1", date = "2023-01-07T21:58:34+01:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.1", date = "2023-01-08T20:53:23+01:00")
     public String getPrtry() {
         return prtry;
     }
@@ -98,7 +98,7 @@ public class ClearingSystemMemberIdentification3Choice {
      *     {@link String }
      *     
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.1", date = "2023-01-07T21:58:34+01:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.1", date = "2023-01-08T20:53:23+01:00")
     public void setPrtry(String value) {
         this.prtry = value;
     }

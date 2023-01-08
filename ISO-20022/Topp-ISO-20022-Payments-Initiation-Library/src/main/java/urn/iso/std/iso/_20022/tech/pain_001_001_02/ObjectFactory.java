@@ -29,10 +29,10 @@ import jakarta.xml.bind.annotation.XmlRegistry;
  * 
  */
 @XmlRegistry
-@Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.1", date = "2023-01-07T21:58:34+01:00")
+@Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.1", date = "2023-01-08T20:53:23+01:00")
 public class ObjectFactory {
 
-    private final static QName _Document_QNAME = new QName("urn:iso:std:iso:20022:tech:xsd:qqq.pain.001.001.02.xxx.yyy", "Document");
+    private final static QName _Document_QNAME = new QName("urn:iso:std:iso:20022:tech:xsd:pain.001.001.02", "Document");
 
     /**
      * Create a new ObjectFactory that can be used to create new instances of schema derived classes for package: urn.iso.std.iso._20022.tech.pain_001_001_02
@@ -549,7 +549,7 @@ public class ObjectFactory {
      * @return
      *     the new instance of {@link JAXBElement }{@code <}{@link Document }{@code >}
      */
-    @XmlElementDecl(namespace = "urn:iso:std:iso:20022:tech:xsd:qqq.pain.001.001.02.xxx.yyy", name = "Document")
+    @XmlElementDecl(namespace = "urn:iso:std:iso:20022:tech:xsd:pain.001.001.02", name = "Document")
     public JAXBElement<Document> createDocument(Document value) {
         return new JAXBElement<>(_Document_QNAME, Document.class, null, value);
     }

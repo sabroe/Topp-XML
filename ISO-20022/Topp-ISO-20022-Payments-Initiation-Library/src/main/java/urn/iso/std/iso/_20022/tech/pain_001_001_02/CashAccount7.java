@@ -24,10 +24,10 @@ import jakarta.xml.bind.annotation.XmlType;
  *   <complexContent>
  *     <restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
  *       <sequence>
- *         <element name="Id" type="{urn:iso:std:iso:20022:tech:xsd:qqq.pain.001.001.02.xxx.yyy}AccountIdentification3Choice"/>
- *         <element name="Tp" type="{urn:iso:std:iso:20022:tech:xsd:qqq.pain.001.001.02.xxx.yyy}CashAccountType2" minOccurs="0"/>
- *         <element name="Ccy" type="{urn:iso:std:iso:20022:tech:xsd:qqq.pain.001.001.02.xxx.yyy}CurrencyCode" minOccurs="0"/>
- *         <element name="Nm" type="{urn:iso:std:iso:20022:tech:xsd:qqq.pain.001.001.02.xxx.yyy}Max70Text" minOccurs="0"/>
+ *         <element name="Id" type="{urn:iso:std:iso:20022:tech:xsd:pain.001.001.02}AccountIdentification3Choice"/>
+ *         <element name="Tp" type="{urn:iso:std:iso:20022:tech:xsd:pain.001.001.02}CashAccountType2" minOccurs="0"/>
+ *         <element name="Ccy" type="{urn:iso:std:iso:20022:tech:xsd:pain.001.001.02}CurrencyCode" minOccurs="0"/>
+ *         <element name="Nm" type="{urn:iso:std:iso:20022:tech:xsd:pain.001.001.02}Max70Text" minOccurs="0"/>
  *       </sequence>
  *     </restriction>
  *   </complexContent>
@@ -43,20 +43,20 @@ import jakarta.xml.bind.annotation.XmlType;
     "ccy",
     "nm"
 })
-@Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.1", date = "2023-01-07T21:58:34+01:00")
+@Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.1", date = "2023-01-08T20:53:23+01:00")
 public class CashAccount7 {
 
     @XmlElement(name = "Id", required = true)
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.1", date = "2023-01-07T21:58:34+01:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.1", date = "2023-01-08T20:53:23+01:00")
     protected AccountIdentification3Choice id;
     @XmlElement(name = "Tp")
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.1", date = "2023-01-07T21:58:34+01:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.1", date = "2023-01-08T20:53:23+01:00")
     protected CashAccountType2 tp;
     @XmlElement(name = "Ccy")
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.1", date = "2023-01-07T21:58:34+01:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.1", date = "2023-01-08T20:53:23+01:00")
     protected String ccy;
     @XmlElement(name = "Nm")
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.1", date = "2023-01-07T21:58:34+01:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.1", date = "2023-01-08T20:53:23+01:00")
     protected String nm;
 
     /**
@@ -67,7 +67,7 @@ public class CashAccount7 {
      *     {@link AccountIdentification3Choice }
      *     
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.1", date = "2023-01-07T21:58:34+01:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.1", date = "2023-01-08T20:53:23+01:00")
     public AccountIdentification3Choice getId() {
         return id;
     }
@@ -80,7 +80,7 @@ public class CashAccount7 {
      *     {@link AccountIdentification3Choice }
      *     
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.1", date = "2023-01-07T21:58:34+01:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.1", date = "2023-01-08T20:53:23+01:00")
     public void setId(AccountIdentification3Choice value) {
         this.id = value;
     }
@@ -93,7 +93,7 @@ public class CashAccount7 {
      *     {@link CashAccountType2 }
      *     
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.1", date = "2023-01-07T21:58:34+01:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.1", date = "2023-01-08T20:53:23+01:00")
     public CashAccountType2 getTp() {
         return tp;
     }
@@ -106,7 +106,7 @@ public class CashAccount7 {
      *     {@link CashAccountType2 }
      *     
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.1", date = "2023-01-07T21:58:34+01:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.1", date = "2023-01-08T20:53:23+01:00")
     public void setTp(CashAccountType2 value) {
         this.tp = value;
     }
@@ -119,7 +119,7 @@ public class CashAccount7 {
      *     {@link String }
      *     
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.1", date = "2023-01-07T21:58:34+01:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.1", date = "2023-01-08T20:53:23+01:00")
     public String getCcy() {
         return ccy;
     }
@@ -132,7 +132,7 @@ public class CashAccount7 {
      *     {@link String }
      *     
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.1", date = "2023-01-07T21:58:34+01:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.1", date = "2023-01-08T20:53:23+01:00")
     public void setCcy(String value) {
         this.ccy = value;
     }
@@ -145,7 +145,7 @@ public class CashAccount7 {
      *     {@link String }
      *     
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.1", date = "2023-01-07T21:58:34+01:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.1", date = "2023-01-08T20:53:23+01:00")
     public String getNm() {
         return nm;
     }
@@ -158,7 +158,7 @@ public class CashAccount7 {
      *     {@link String }
      *     
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.1", date = "2023-01-07T21:58:34+01:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.1", date = "2023-01-08T20:53:23+01:00")
     public void setNm(String value) {
         this.nm = value;
     }

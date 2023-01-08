@@ -25,9 +25,9 @@ import jakarta.xml.bind.annotation.XmlType;
  *   <complexContent>
  *     <restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
  *       <sequence>
- *         <element name="DbtCdtRptgInd" type="{urn:iso:std:iso:20022:tech:xsd:qqq.pain.001.001.02.xxx.yyy}RegulatoryReportingType1Code" minOccurs="0"/>
- *         <element name="Authrty" type="{urn:iso:std:iso:20022:tech:xsd:qqq.pain.001.001.02.xxx.yyy}RegulatoryAuthority" minOccurs="0"/>
- *         <element name="RgltryDtls" type="{urn:iso:std:iso:20022:tech:xsd:qqq.pain.001.001.02.xxx.yyy}StructuredRegulatoryReporting2" minOccurs="0"/>
+ *         <element name="DbtCdtRptgInd" type="{urn:iso:std:iso:20022:tech:xsd:pain.001.001.02}RegulatoryReportingType1Code" minOccurs="0"/>
+ *         <element name="Authrty" type="{urn:iso:std:iso:20022:tech:xsd:pain.001.001.02}RegulatoryAuthority" minOccurs="0"/>
+ *         <element name="RgltryDtls" type="{urn:iso:std:iso:20022:tech:xsd:pain.001.001.02}StructuredRegulatoryReporting2" minOccurs="0"/>
  *       </sequence>
  *     </restriction>
  *   </complexContent>
@@ -42,18 +42,18 @@ import jakarta.xml.bind.annotation.XmlType;
     "authrty",
     "rgltryDtls"
 })
-@Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.1", date = "2023-01-07T21:58:34+01:00")
+@Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.1", date = "2023-01-08T20:53:23+01:00")
 public class RegulatoryReporting2 {
 
     @XmlElement(name = "DbtCdtRptgInd")
     @XmlSchemaType(name = "string")
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.1", date = "2023-01-07T21:58:34+01:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.1", date = "2023-01-08T20:53:23+01:00")
     protected RegulatoryReportingType1Code dbtCdtRptgInd;
     @XmlElement(name = "Authrty")
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.1", date = "2023-01-07T21:58:34+01:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.1", date = "2023-01-08T20:53:23+01:00")
     protected RegulatoryAuthority authrty;
     @XmlElement(name = "RgltryDtls")
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.1", date = "2023-01-07T21:58:34+01:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.1", date = "2023-01-08T20:53:23+01:00")
     protected StructuredRegulatoryReporting2 rgltryDtls;
 
     /**
@@ -64,7 +64,7 @@ public class RegulatoryReporting2 {
      *     {@link RegulatoryReportingType1Code }
      *     
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.1", date = "2023-01-07T21:58:34+01:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.1", date = "2023-01-08T20:53:23+01:00")
     public RegulatoryReportingType1Code getDbtCdtRptgInd() {
         return dbtCdtRptgInd;
     }
@@ -77,7 +77,7 @@ public class RegulatoryReporting2 {
      *     {@link RegulatoryReportingType1Code }
      *     
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.1", date = "2023-01-07T21:58:34+01:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.1", date = "2023-01-08T20:53:23+01:00")
     public void setDbtCdtRptgInd(RegulatoryReportingType1Code value) {
         this.dbtCdtRptgInd = value;
     }
@@ -90,7 +90,7 @@ public class RegulatoryReporting2 {
      *     {@link RegulatoryAuthority }
      *     
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.1", date = "2023-01-07T21:58:34+01:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.1", date = "2023-01-08T20:53:23+01:00")
     public RegulatoryAuthority getAuthrty() {
         return authrty;
     }
@@ -103,7 +103,7 @@ public class RegulatoryReporting2 {
      *     {@link RegulatoryAuthority }
      *     
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.1", date = "2023-01-07T21:58:34+01:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.1", date = "2023-01-08T20:53:23+01:00")
     public void setAuthrty(RegulatoryAuthority value) {
         this.authrty = value;
     }
@@ -116,7 +116,7 @@ public class RegulatoryReporting2 {
      *     {@link StructuredRegulatoryReporting2 }
      *     
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.1", date = "2023-01-07T21:58:34+01:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.1", date = "2023-01-08T20:53:23+01:00")
     public StructuredRegulatoryReporting2 getRgltryDtls() {
         return rgltryDtls;
     }
@@ -129,7 +129,7 @@ public class RegulatoryReporting2 {
      *     {@link StructuredRegulatoryReporting2 }
      *     
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.1", date = "2023-01-07T21:58:34+01:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.1", date = "2023-01-08T20:53:23+01:00")
     public void setRgltryDtls(StructuredRegulatoryReporting2 value) {
         this.rgltryDtls = value;
     }

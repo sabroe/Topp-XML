@@ -24,7 +24,7 @@ import jakarta.xml.bind.annotation.XmlType;
  *   <complexContent>
  *     <restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
  *       <sequence>
- *         <element name="pain.001.001.02" type="{urn:iso:std:iso:20022:tech:xsd:qqq.pain.001.001.02.xxx.yyy}pain.001.001.02"/>
+ *         <element name="pain.001.001.02" type="{urn:iso:std:iso:20022:tech:xsd:pain.001.001.02}pain.001.001.02"/>
  *       </sequence>
  *     </restriction>
  *   </complexContent>
@@ -37,11 +37,11 @@ import jakarta.xml.bind.annotation.XmlType;
 @XmlType(name = "Document", propOrder = {
     "pain00100102"
 })
-@Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.1", date = "2023-01-07T21:58:34+01:00")
+@Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.1", date = "2023-01-08T20:53:23+01:00")
 public class Document {
 
     @XmlElement(name = "pain.001.001.02", required = true)
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.1", date = "2023-01-07T21:58:34+01:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.1", date = "2023-01-08T20:53:23+01:00")
     protected Pain00100102 pain00100102;
 
     /**
@@ -52,7 +52,7 @@ public class Document {
      *     {@link Pain00100102 }
      *     
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.1", date = "2023-01-07T21:58:34+01:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.1", date = "2023-01-08T20:53:23+01:00")
     public Pain00100102 getPain00100102() {
         return pain00100102;
     }
@@ -65,7 +65,7 @@ public class Document {
      *     {@link Pain00100102 }
      *     
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.1", date = "2023-01-07T21:58:34+01:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.1", date = "2023-01-08T20:53:23+01:00")
     public void setPain00100102(Pain00100102 value) {
         this.pain00100102 = value;
     }
