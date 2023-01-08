@@ -60,8 +60,7 @@ public final class PaymentInitiation {
      */
     public static void writeDocument(Document document,
                                      OutputStream out) throws IOException {
-//        NewSchemaOperator newSchemaOperator=()->Schemas.createSchema(XML_SCHEMA_RESOURCE_NAME);
-        NewSchemaOperator newSchemaOperator=null;
+        NewSchemaOperator newSchemaOperator=()->Schemas.createSchema(XML_SCHEMA_RESOURCE_NAME);
         JAXBElements.write(ROOT_ELEMENT_NAME,DECLARED_TYPE,document,newSchemaOperator,(m, e)->m.marshal(e,out));
     }
 
@@ -72,6 +71,7 @@ public final class PaymentInitiation {
      */
     public static void main(String[] args) throws IOException {
         URL url=Thread.currentThread().getContextClassLoader().getResource("xsd/pain.001.001.02.xml");
+        //URL url=PaymentInitiation.class.getClassLoader().getResource("xsd/pain.001.001.02.xml");
         Document document=null;
         try (InputStream in=url.openStream()) {
             document=readDocument(in);

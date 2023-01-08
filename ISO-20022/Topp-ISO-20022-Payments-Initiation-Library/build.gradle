@@ -33,7 +33,8 @@ xjcGenerate {
 */
 
 javadoc {
-    exclude 'urn/iso/std/iso/_20022/**'
+    //exclude 'urn/iso/std/iso/_20022/**'
+    options.addBooleanOption('Xdoclint:none', true)
 }
 
 sourceSets {
@@ -50,8 +51,6 @@ dependencies {
 
     implementation 'org.slf4j:slf4j-api:2.0.6'
 
-    implementation project(':Topp-JAXB-Binding-Library')
-
     //See https://eclipse-ee4j.github.io/jaxb-ri/ !
     api 'jakarta.annotation:jakarta.annotation-api:2.1.1'
     api 'jakarta.activation:jakarta.activation-api:2.1.0'
@@ -60,6 +59,4 @@ dependencies {
     api 'com.sun.xml.bind:jaxb-core:4.0.1'
     api 'com.sun.xml.bind:jaxb-impl:4.0.1'
     api 'com.sun.xml.bind:jaxb-jxc:4.0.1'
-
-    testImplementation 'org.junit.jupiter:junit-jupiter:5.6.2'
 }

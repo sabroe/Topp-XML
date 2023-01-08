@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<bindings
+        xmlns="https://jakarta.ee/xml/ns/jaxb" version="3.0"
+        schemaLocation="resources/xsd/payments-initiation/pain.001.001.02.xsd" node="//xs:schema">
+    <schemaBindings>
+        <package name="org.iso20022.std.iso._20022.tech.pain_001_001_02"/>
+    </schemaBindings>
+</bindings>
