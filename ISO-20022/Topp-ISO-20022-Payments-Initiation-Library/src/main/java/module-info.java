@@ -1,5 +1,5 @@
 /**
- * .
+ * Topp ISO 20022 "Payment Initiation" is an open-source Java library which exemplifies the integration of Jakarta JAXB generates objects.
  */
 module com.yelstream.topp.iso._20022_.payment {
     requires static lombok;
